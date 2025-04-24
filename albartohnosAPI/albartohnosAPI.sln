@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "albartohnosAPI", "albartohnosAPI.csproj", "{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9D067B51-B7E2-4E3D-95BC-22233364B25E}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,602 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|c:\\javydev\\projectdam\\api\\albartohnosapi\\controllers\\centrosparadacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|solutionrelative:controllers\\centrosparadacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|c:\\javydev\\projectdam\\api\\albartohnosapi\\controllers\\estadosparadacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|solutionrelative:controllers\\estadosparadacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|c:\\javydev\\projectdam\\api\\albartohnosapi\\controllers\\estadospedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|solutionrelative:controllers\\estadospedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|c:\\javydev\\projectdam\\api\\albartohnosapi\\controllers\\estadosrutacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|solutionrelative:controllers\\estadosrutacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|c:\\javydev\\projectdam\\api\\albartohnosapi\\controllers\\historicorutascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|solutionrelative:controllers\\historicorutascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|c:\\javydev\\projectdam\\api\\albartohnosapi\\controllers\\paradascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|solutionrelative:controllers\\paradascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|c:\\javydev\\projectdam\\api\\albartohnosapi\\controllers\\pedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|solutionrelative:controllers\\pedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|c:\\javydev\\projectdam\\api\\albartohnosapi\\controllers\\perfilescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|solutionrelative:controllers\\perfilescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|c:\\javydev\\projectdam\\api\\albartohnosapi\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|solutionrelative:controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|c:\\javydev\\projectdam\\api\\albartohnosapi\\controllers\\rutascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|solutionrelative:controllers\\rutascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|c:\\javydev\\projectdam\\api\\albartohnosapi\\controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|solutionrelative:controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|c:\\javydev\\projectdam\\api\\albartohnosapi\\controllers\\tiposcentrocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|solutionrelative:controllers\\tiposcentrocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|c:\\javydev\\projectdam\\api\\albartohnosapi\\controllers\\tipospedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|solutionrelative:controllers\\tipospedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|c:\\javydev\\projectdam\\api\\albartohnosapi\\controllers\\vehiculoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|solutionrelative:controllers\\vehiculoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|c:\\javydev\\projectdam\\api\\albartohnosapi\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|solutionrelative:controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|c:\\javydev\\projectdam\\api\\albartohnosapi\\models\\stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|solutionrelative:models\\stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|c:\\javydev\\projectdam\\api\\albartohnosapi\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|solutionrelative:models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|c:\\javydev\\projectdam\\api\\albartohnosapi\\models\\tipocentro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|solutionrelative:models\\tipocentro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|c:\\javydev\\projectdam\\api\\albartohnosapi\\models\\tipopedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|solutionrelative:models\\tipopedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|c:\\javydev\\projectdam\\api\\albartohnosapi\\models\\vehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|solutionrelative:models\\vehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|c:\\javydev\\projectdam\\api\\albartohnosapi\\models\\ruta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|solutionrelative:models\\ruta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|c:\\javydev\\projectdam\\api\\albartohnosapi\\models\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|solutionrelative:models\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|c:\\javydev\\projectdam\\api\\albartohnosapi\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|solutionrelative:models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|c:\\javydev\\projectdam\\api\\albartohnosapi\\models\\perfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|solutionrelative:models\\perfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|c:\\javydev\\projectdam\\api\\albartohnosapi\\models\\estadopedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|solutionrelative:models\\estadopedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|c:\\javydev\\projectdam\\api\\albartohnosapi\\models\\estadoruta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|solutionrelative:models\\estadoruta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|c:\\javydev\\projectdam\\api\\albartohnosapi\\models\\historicoruta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|solutionrelative:models\\historicoruta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|c:\\javydev\\projectdam\\api\\albartohnosapi\\models\\parada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|solutionrelative:models\\parada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|c:\\javydev\\projectdam\\api\\albartohnosapi\\models\\centroparada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|solutionrelative:models\\centroparada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|c:\\javydev\\projectdam\\api\\albartohnosapi\\models\\estadoparada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|solutionrelative:models\\estadoparada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|c:\\javydev\\projectdam\\api\\albartohnosapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|c:\\javydev\\projectdam\\api\\albartohnosapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|c:\\javydev\\projectdam\\api\\albartohnosapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|c:\\javydev\\projectdam\\api\\albartohnosapi\\albartohnosapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B4D8B03F-3609-4B9F-A5E4-F5635F31E592}|albartohnosAPI.csproj|solutionrelative:albartohnosapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "albartohnosAPI",
+              "DocumentMoniker": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\albartohnosAPI.csproj",
+              "RelativeDocumentMoniker": "albartohnosAPI.csproj",
+              "ToolTip": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\albartohnosAPI.csproj",
+              "RelativeToolTip": "albartohnosAPI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-24T19:54:46.387Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACIAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T19:46:47.905Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T19:49:36.806Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-24T19:46:06.332Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CentrosParadaController.cs",
+              "DocumentMoniker": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Controllers\\CentrosParadaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CentrosParadaController.cs",
+              "ToolTip": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Controllers\\CentrosParadaController.cs",
+              "RelativeToolTip": "Controllers\\CentrosParadaController.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAIwAAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T21:16:10.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EstadosParadaController.cs",
+              "DocumentMoniker": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Controllers\\EstadosParadaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EstadosParadaController.cs",
+              "ToolTip": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Controllers\\EstadosParadaController.cs",
+              "RelativeToolTip": "Controllers\\EstadosParadaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T21:15:31.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EstadosPedidoController.cs",
+              "DocumentMoniker": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Controllers\\EstadosPedidoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EstadosPedidoController.cs",
+              "ToolTip": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Controllers\\EstadosPedidoController.cs",
+              "RelativeToolTip": "Controllers\\EstadosPedidoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T21:14:56.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EstadosRutaController.cs",
+              "DocumentMoniker": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Controllers\\EstadosRutaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EstadosRutaController.cs",
+              "ToolTip": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Controllers\\EstadosRutaController.cs",
+              "RelativeToolTip": "Controllers\\EstadosRutaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T21:14:15.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HistoricoRutasController.cs",
+              "DocumentMoniker": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Controllers\\HistoricoRutasController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HistoricoRutasController.cs",
+              "ToolTip": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Controllers\\HistoricoRutasController.cs",
+              "RelativeToolTip": "Controllers\\HistoricoRutasController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T21:13:44.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ParadasController.cs",
+              "DocumentMoniker": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Controllers\\ParadasController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ParadasController.cs",
+              "ToolTip": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Controllers\\ParadasController.cs",
+              "RelativeToolTip": "Controllers\\ParadasController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T21:12:48.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PedidosController.cs",
+              "DocumentMoniker": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Controllers\\PedidosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PedidosController.cs",
+              "ToolTip": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Controllers\\PedidosController.cs",
+              "RelativeToolTip": "Controllers\\PedidosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T21:12:05.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PerfilesController.cs",
+              "DocumentMoniker": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Controllers\\PerfilesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PerfilesController.cs",
+              "ToolTip": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Controllers\\PerfilesController.cs",
+              "RelativeToolTip": "Controllers\\PerfilesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T21:11:32.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductosController.cs",
+              "DocumentMoniker": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Controllers\\ProductosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductosController.cs",
+              "ToolTip": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Controllers\\ProductosController.cs",
+              "RelativeToolTip": "Controllers\\ProductosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T21:08:49.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RutasController.cs",
+              "DocumentMoniker": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Controllers\\RutasController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RutasController.cs",
+              "ToolTip": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Controllers\\RutasController.cs",
+              "RelativeToolTip": "Controllers\\RutasController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T21:08:19.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "StockController.cs",
+              "DocumentMoniker": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Controllers\\StockController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StockController.cs",
+              "ToolTip": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Controllers\\StockController.cs",
+              "RelativeToolTip": "Controllers\\StockController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T21:07:52.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TiposCentroController.cs",
+              "DocumentMoniker": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Controllers\\TiposCentroController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TiposCentroController.cs",
+              "ToolTip": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Controllers\\TiposCentroController.cs",
+              "RelativeToolTip": "Controllers\\TiposCentroController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T21:06:46.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TiposPedidoController.cs",
+              "DocumentMoniker": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Controllers\\TiposPedidoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TiposPedidoController.cs",
+              "ToolTip": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Controllers\\TiposPedidoController.cs",
+              "RelativeToolTip": "Controllers\\TiposPedidoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T21:05:33.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "VehiculosController.cs",
+              "DocumentMoniker": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Controllers\\VehiculosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\VehiculosController.cs",
+              "ToolTip": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Controllers\\VehiculosController.cs",
+              "RelativeToolTip": "Controllers\\VehiculosController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T20:43:56.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsuariosController.cs",
+              "ToolTip": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "Controllers\\UsuariosController.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAmwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T20:42:45.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "Models\\Usuario.cs",
+              "ToolTip": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Models\\Usuario.cs",
+              "RelativeToolTip": "Models\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T20:35:16.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "TipoPedido.cs",
+              "DocumentMoniker": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Models\\TipoPedido.cs",
+              "RelativeDocumentMoniker": "Models\\TipoPedido.cs",
+              "ToolTip": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Models\\TipoPedido.cs",
+              "RelativeToolTip": "Models\\TipoPedido.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T20:35:02.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "TipoCentro.cs",
+              "DocumentMoniker": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Models\\TipoCentro.cs",
+              "RelativeDocumentMoniker": "Models\\TipoCentro.cs",
+              "ToolTip": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Models\\TipoCentro.cs",
+              "RelativeToolTip": "Models\\TipoCentro.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T20:34:52.743Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Stock.cs",
+              "DocumentMoniker": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Models\\Stock.cs",
+              "RelativeDocumentMoniker": "Models\\Stock.cs",
+              "ToolTip": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Models\\Stock.cs",
+              "RelativeToolTip": "Models\\Stock.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T20:32:26.013Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Vehiculo.cs",
+              "DocumentMoniker": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Models\\Vehiculo.cs",
+              "RelativeDocumentMoniker": "Models\\Vehiculo.cs",
+              "ToolTip": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Models\\Vehiculo.cs",
+              "RelativeToolTip": "Models\\Vehiculo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T20:35:44.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Ruta.cs",
+              "DocumentMoniker": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Models\\Ruta.cs",
+              "RelativeDocumentMoniker": "Models\\Ruta.cs",
+              "ToolTip": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Models\\Ruta.cs",
+              "RelativeToolTip": "Models\\Ruta.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T20:31:15.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Models\\Producto.cs",
+              "RelativeDocumentMoniker": "Models\\Producto.cs",
+              "ToolTip": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Models\\Producto.cs",
+              "RelativeToolTip": "Models\\Producto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T20:30:57.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Perfil.cs",
+              "DocumentMoniker": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Models\\Perfil.cs",
+              "RelativeDocumentMoniker": "Models\\Perfil.cs",
+              "ToolTip": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Models\\Perfil.cs",
+              "RelativeToolTip": "Models\\Perfil.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T20:30:33.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Pedido.cs",
+              "DocumentMoniker": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Models\\Pedido.cs",
+              "RelativeDocumentMoniker": "Models\\Pedido.cs",
+              "ToolTip": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Models\\Pedido.cs",
+              "RelativeToolTip": "Models\\Pedido.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T20:27:20.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Parada.cs",
+              "DocumentMoniker": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Models\\Parada.cs",
+              "RelativeDocumentMoniker": "Models\\Parada.cs",
+              "ToolTip": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Models\\Parada.cs",
+              "RelativeToolTip": "Models\\Parada.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T20:24:53.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "HistoricoRuta.cs",
+              "DocumentMoniker": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Models\\HistoricoRuta.cs",
+              "RelativeDocumentMoniker": "Models\\HistoricoRuta.cs",
+              "ToolTip": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Models\\HistoricoRuta.cs",
+              "RelativeToolTip": "Models\\HistoricoRuta.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T20:23:55.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "EstadoRuta.cs",
+              "DocumentMoniker": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Models\\EstadoRuta.cs",
+              "RelativeDocumentMoniker": "Models\\EstadoRuta.cs",
+              "ToolTip": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Models\\EstadoRuta.cs",
+              "RelativeToolTip": "Models\\EstadoRuta.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T20:23:35.119Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "EstadoPedido.cs",
+              "DocumentMoniker": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Models\\EstadoPedido.cs",
+              "RelativeDocumentMoniker": "Models\\EstadoPedido.cs",
+              "ToolTip": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Models\\EstadoPedido.cs",
+              "RelativeToolTip": "Models\\EstadoPedido.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T20:23:25.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "CentroParada.cs",
+              "DocumentMoniker": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Models\\CentroParada.cs",
+              "RelativeDocumentMoniker": "Models\\CentroParada.cs",
+              "ToolTip": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Models\\CentroParada.cs",
+              "RelativeToolTip": "Models\\CentroParada.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T20:03:03.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "EstadoParada.cs",
+              "DocumentMoniker": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Models\\EstadoParada.cs",
+              "RelativeDocumentMoniker": "Models\\EstadoParada.cs",
+              "ToolTip": "C:\\JavyDEV\\ProjectDAM\\API\\albartohnosAPI\\Models\\EstadoParada.cs",
+              "RelativeToolTip": "Models\\EstadoParada.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T20:22:47.368Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
