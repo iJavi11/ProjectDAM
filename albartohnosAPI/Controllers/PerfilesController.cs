@@ -23,10 +23,17 @@ namespace albartohnosAPI.Controllers
 
         // GET: api/Perfiles
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Perfil>>> GetPerfil()
+        public async Task<List<Perfil>> GetPerfiles()
         {
-            return await _context.Perfil.ToListAsync();
+            return await Negocio.GetUserProfiles();
         }
+
+        /* ------------------------------------------------------------------------------------------------------------------------------------------------
+         * NO SE REQUIERE DE ESTOS MÉTODOS YA QUE EN PRINCIPIO NO SE MANEJARÁN LOS PERFILES.
+         * SE COMENTA YA QUE EN UN FUTURO SE PODRÍAN REQUERIR.
+         */
+
+        /* ------------------------------------------------------------------------------------------------------------------------------------------------
 
         // GET: api/Perfiles/5
         [HttpGet("{id}")]
@@ -104,5 +111,7 @@ namespace albartohnosAPI.Controllers
         {
             return _context.Perfil.Any(e => e.Id == id);
         }
+
+        ------------------------------------------------------------------------------------------------------------------------------------------------ */
     }
 }

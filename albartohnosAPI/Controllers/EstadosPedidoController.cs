@@ -23,10 +23,17 @@ namespace albartohnosAPI.Controllers
 
         // GET: api/EstadosPedido
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<EstadoPedido>>> GetEstadoPedido()
+        public async Task<List<EstadoPedido>> GetEstadosPedido()
         {
-            return await _context.EstadoPedido.ToListAsync();
+            return await Negocio.GetOrderStates();
         }
+
+        /* ------------------------------------------------------------------------------------------------------------------------------------------------
+         * NO SE REQUIERE DE ESTOS MÉTODOS YA QUE EN PRINCIPIO NO SE MANEJARÁN LOS ESTADOS DE LOS PEDIDOS.
+         * SE COMENTA YA QUE EN UN FUTURO SE PODRÍAN REQUERIR.
+         */
+
+        /* ------------------------------------------------------------------------------------------------------------------------------------------------
 
         // GET: api/EstadosPedido/5
         [HttpGet("{id}")]
@@ -104,5 +111,7 @@ namespace albartohnosAPI.Controllers
         {
             return _context.EstadoPedido.Any(e => e.Id == id);
         }
+
+        ------------------------------------------------------------------------------------------------------------------------------------------------ */
     }
 }

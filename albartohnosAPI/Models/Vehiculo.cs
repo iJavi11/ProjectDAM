@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace albartohnosAPI.Models;
 
+[Table("Vehiculos")]
 public partial class Vehiculo
 {
     [Key]
@@ -19,9 +21,11 @@ public partial class Vehiculo
 
     public sbyte Activo { get; set; }
 
+    [Column("Fecha_Alta")]
     public DateOnly? FechaAlta { get; set; }
 
+    [Column("Fecha_Baja")]
     public DateOnly? FechaBaja { get; set; }
 
-    public virtual ICollection<Ruta> Ruta { get; set; } = new List<Ruta>();
+    public virtual ICollection<Ruta> Rutas { get; set; } = new List<Ruta>();
 }

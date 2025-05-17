@@ -23,10 +23,17 @@ namespace albartohnosAPI.Controllers
 
         // GET: api/EstadosRuta
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<EstadoRuta>>> GetEstadoRuta()
+        public async Task<List<EstadoRuta>> GetEstadosRuta()
         {
-            return await _context.EstadoRuta.ToListAsync();
+            return await Negocio.GetRouteStates();
         }
+
+        /* ------------------------------------------------------------------------------------------------------------------------------------------------
+         * NO SE REQUIERE DE ESTOS MÉTODOS YA QUE EN PRINCIPIO NO SE MANEJARÁN LOS ESTADOS DE LAS RUTAS.
+         * SE COMENTA YA QUE EN UN FUTURO SE PODRÍAN REQUERIR.
+         */
+
+        /* ------------------------------------------------------------------------------------------------------------------------------------------------
 
         // GET: api/EstadosRuta/5
         [HttpGet("{id}")]
@@ -104,5 +111,7 @@ namespace albartohnosAPI.Controllers
         {
             return _context.EstadoRuta.Any(e => e.Id == id);
         }
+
+        ------------------------------------------------------------------------------------------------------------------------------------------------ */
     }
 }

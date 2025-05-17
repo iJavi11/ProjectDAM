@@ -1,0 +1,296 @@
+2025-04-30 20:09:31.109 +02:00 [INF] API is starting
+2025-04-30 20:50:15.804 +02:00 [INF] API is starting
+2025-04-30 20:53:57.539 +02:00 [INF] API is starting
+2025-04-30 21:17:54.428 +02:00 [INF] API is starting
+2025-04-30 21:34:03.229 +02:00 [INF] API is starting
+2025-04-30 21:34:53.530 +02:00 [INF] CheckUsernameTaken API called with username: javierbg
+2025-04-30 21:34:53.645 +02:00 [ERR] An error occurred in CheckUsernameAvailability API: No database provider has been configured for this DbContext. A provider can be configured by overriding the 'DbContext.OnConfiguring' method or by using 'AddDbContext' on the application service provider. If 'AddDbContext' is used, then also ensure that your DbContext type accepts a DbContextOptions<TContext> object in its constructor and passes it to the base constructor for DbContext.
+2025-04-30 21:35:39.101 +02:00 [INF] API is starting
+2025-04-30 21:35:54.615 +02:00 [INF] CheckUsernameTaken API called with username: javierbg
+2025-04-30 21:35:54.732 +02:00 [ERR] An error occurred in CheckUsernameAvailability API: No database provider has been configured for this DbContext. A provider can be configured by overriding the 'DbContext.OnConfiguring' method or by using 'AddDbContext' on the application service provider. If 'AddDbContext' is used, then also ensure that your DbContext type accepts a DbContextOptions<TContext> object in its constructor and passes it to the base constructor for DbContext.
+2025-04-30 21:49:41.155 +02:00 [INF] API is starting
+2025-04-30 21:50:03.498 +02:00 [INF] CheckUsernameTaken API called with username: javierbg
+2025-04-30 21:51:12.793 +02:00 [ERR] An error occurred in CheckUsernameAvailability API: Object reference not set to an instance of an object.
+2025-04-30 21:55:27.350 +02:00 [INF] API is starting
+2025-04-30 21:55:42.235 +02:00 [INF] CheckUsernameTaken API called with username: javierbg
+2025-04-30 22:02:54.190 +02:00 [INF] API is starting
+2025-04-30 22:03:04.587 +02:00 [INF] CheckUsernameTaken API called with username: javierbg
+2025-04-30 22:06:22.628 +02:00 [INF] API is starting
+2025-04-30 22:06:34.989 +02:00 [INF] CheckUsernameTaken API called with username: javierbg
+2025-04-30 22:06:35.944 +02:00 [INF] CheckUsernameAvailability API response: False
+2025-04-30 22:08:55.573 +02:00 [INF] API is starting
+2025-04-30 22:09:05.463 +02:00 [INF] CheckUsernameTaken API called with username: javierbg
+2025-04-30 22:09:06.463 +02:00 [INF] CheckUsernameAvailability API response: False
+2025-04-30 22:45:42.906 +02:00 [INF] API is starting
+2025-04-30 22:45:57.331 +02:00 [INF] CheckUsernameTaken API called with username: javierbg
+2025-04-30 22:45:58.227 +02:00 [INF] CheckUsernameAvailability API response: False
+2025-05-06 20:30:07.293 +02:00 [INF] API is starting
+2025-05-07 17:24:05.658 +02:00 [INF] API is starting
+2025-05-07 17:35:23.192 +02:00 [INF] API is starting
+2025-05-07 17:35:38.725 +02:00 [INF] CheckUsernameTaken API called with username: lorenzo
+2025-05-07 17:35:39.601 +02:00 [INF] CheckUsernameAvailability API response: False
+2025-05-07 19:14:29.430 +02:00 [INF] API is starting
+2025-05-07 19:17:14.768 +02:00 [INF] CheckUsernameTaken API called with username: admin
+2025-05-07 19:17:15.633 +02:00 [INF] CheckUsernameAvailability API response: True
+2025-05-07 19:55:23.510 +02:00 [INF] API is starting
+2025-05-07 19:55:39.626 +02:00 [INF] CheckUsernameTaken API called with username: admin
+2025-05-07 19:55:40.548 +02:00 [INF] CheckUsernameAvailability API response: True
+2025-05-07 20:15:57.747 +02:00 [INF] API is starting
+2025-05-07 20:16:45.259 +02:00 [INF] Login API called with username: admin
+2025-05-07 20:17:25.955 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NjY0MTg0NSwiZXhwIjoxNzc4MTc3ODQ1LCJpYXQiOjE3NDY2NDE4NDUsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.HhnWmTT2nsi9t3LjHg7q5RXNNdR3g6azV69Ig4o1WX4
+2025-05-07 20:17:37.640 +02:00 [INF] Login API called with username: admin
+2025-05-07 20:17:39.702 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NjY0MTg1OSwiZXhwIjoxNzc4MTc3ODU5LCJpYXQiOjE3NDY2NDE4NTksImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.Eon9s5mAqIfV6biSLTSJF3Yl51JEjcNpy2C0kcuTRMI
+2025-05-07 20:41:29.526 +02:00 [INF] API is starting
+2025-05-07 20:42:42.901 +02:00 [INF] Login API called with username: admin
+2025-05-07 20:43:01.091 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NjY0MzM4MSwiZXhwIjoxNzc4MTc5MzgxLCJpYXQiOjE3NDY2NDMzODEsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.p4XuRpL4VmgUnTgy_85ec2IVRa7Nf0zX-JZo23KFEy0
+2025-05-07 20:44:38.273 +02:00 [INF] Login API called with username: admin
+2025-05-07 20:44:46.576 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NjY0MzQ4NiwiZXhwIjoxNzc4MTc5NDg2LCJpYXQiOjE3NDY2NDM0ODYsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.aLNS39IcOT4xwS5UDN4xmkxUP1Okqdywfs9U1zxaW9o
+2025-05-07 20:57:14.355 +02:00 [INF] API is starting
+2025-05-07 20:57:31.179 +02:00 [INF] Login API called with username: admin
+2025-05-07 20:57:36.192 +02:00 [WRN] Invalid login attempt for username: admin
+2025-05-07 20:58:24.937 +02:00 [INF] Login API called with username: admin
+2025-05-07 20:58:52.250 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NjY0NDMzMiwiZXhwIjoxNzc4MTgwMzMyLCJpYXQiOjE3NDY2NDQzMzIsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.RxnJTS_aCypgE8_jB7WLznWcpK2ryer093bImWmlLm0
+2025-05-07 21:05:54.175 +02:00 [INF] Login API called with username: admin
+2025-05-07 21:05:55.798 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NjY0NDc1NSwiZXhwIjoxNzc4MTgwNzU1LCJpYXQiOjE3NDY2NDQ3NTUsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.UgJcJUjoUKL6ojrzyF6x0eabaaWbzRLuzJr_vwAGEKI
+2025-05-07 21:06:34.003 +02:00 [INF] Login API called with username: admin
+2025-05-07 21:06:35.032 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NjY0NDc5NSwiZXhwIjoxNzc4MTgwNzk1LCJpYXQiOjE3NDY2NDQ3OTUsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.tzQPwulaCb16qcMvq1HG5oPz3ZdIn0lXZ96k86jLwv0
+2025-05-07 21:07:00.288 +02:00 [INF] Login API called with username: admin
+2025-05-07 21:07:01.933 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NjY0NDgyMSwiZXhwIjoxNzc4MTgwODIxLCJpYXQiOjE3NDY2NDQ4MjEsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.tvzWupGkMMsunAi6VY4h0ZzbzKQBRylbMFEu4gjlKdU
+2025-05-07 21:15:10.324 +02:00 [INF] API is starting
+2025-05-07 21:27:16.086 +02:00 [INF] Login API called with username: admin
+2025-05-07 21:27:19.128 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NjY0NjAzOSwiZXhwIjoxNzc4MTgyMDM5LCJpYXQiOjE3NDY2NDYwMzksImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.efsZPtAkrTpcGRLF4Lw8MwkoHxjyP-cxQxXcKIbWo3I
+2025-05-07 21:35:45.272 +02:00 [INF] Login API called with username: admin
+2025-05-07 21:35:48.146 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NjY0NjU0OCwiZXhwIjoxNzc4MTgyNTQ4LCJpYXQiOjE3NDY2NDY1NDgsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.bZSxKe0cARWxeO4vD9N8jXgDFWzcttvSLLgs3gVap70
+2025-05-07 21:37:12.512 +02:00 [INF] Login API called with username: jkgkuj
+2025-05-07 21:37:15.760 +02:00 [WRN] Invalid login attempt for username: jkgkuj
+2025-05-07 21:38:19.208 +02:00 [INF] Login API called with username: vbsdvcsad
+2025-05-07 21:38:21.692 +02:00 [WRN] Invalid login attempt for username: vbsdvcsad
+2025-05-07 21:38:29.899 +02:00 [INF] Login API called with username: vbsdvcsad
+2025-05-07 21:38:31.885 +02:00 [WRN] Invalid login attempt for username: vbsdvcsad
+2025-05-07 21:38:38.997 +02:00 [INF] Login API called with username: admin
+2025-05-07 21:38:41.087 +02:00 [WRN] Invalid login attempt for username: admin
+2025-05-07 21:38:47.334 +02:00 [INF] Login API called with username: admin
+2025-05-07 21:41:37.880 +02:00 [WRN] Invalid login attempt for username: admin
+2025-05-10 11:46:30.240 +02:00 [INF] API is starting
+2025-05-10 12:07:38.151 +02:00 [INF] API is starting
+2025-05-10 12:14:18.869 +02:00 [INF] Login API called with username: admin
+2025-05-10 12:14:23.488 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0Njg3MjA2MywiZXhwIjoxNzc4NDA4MDYzLCJpYXQiOjE3NDY4NzIwNjMsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.5yt_KqdehsBBX0MdeDZa7xbsCHfN-vZ0kdnukwQihpQ
+2025-05-10 12:28:18.783 +02:00 [INF] Login API called with username: admin
+2025-05-10 12:28:18.805 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0Njg3Mjg5OCwiZXhwIjoxNzc4NDA4ODk4LCJpYXQiOjE3NDY4NzI4OTgsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.FW5VNlTq_VnKwpaLvWc_TNzStaItNUxxlQTHs51qxak
+2025-05-10 12:29:30.242 +02:00 [INF] API is starting
+2025-05-10 12:33:17.352 +02:00 [INF] Login API called with username: admin
+2025-05-10 12:33:18.293 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0Njg3MzE5OCwiZXhwIjoxNzc4NDA5MTk4LCJpYXQiOjE3NDY4NzMxOTgsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.yRXmrFOvf0HF-UylY2Y5xkJxIktv8sqbjdJjtaPUY_A
+2025-05-10 12:35:15.740 +02:00 [INF] API is starting
+2025-05-10 12:35:37.162 +02:00 [INF] Login API called with username: admin
+2025-05-10 12:35:38.135 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0Njg3MzMzOCwiZXhwIjoxNzc4NDA5MzM4LCJpYXQiOjE3NDY4NzMzMzgsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.V7MBrk_9p5qFrS8PYse_WcwNTx34R87BxTaVMlZkMnQ
+2025-05-10 12:36:28.983 +02:00 [INF] Login API called with username: admin
+2025-05-10 12:36:28.996 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0Njg3MzM4OCwiZXhwIjoxNzc4NDA5Mzg4LCJpYXQiOjE3NDY4NzMzODgsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.e4oE4vO0EMZxHQyzJTbM1p8tSZF7PalJdW5Pz86bA3A
+2025-05-10 12:36:53.770 +02:00 [INF] Login API called with username: admin
+2025-05-10 12:36:53.782 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0Njg3MzQxMywiZXhwIjoxNzc4NDA5NDEzLCJpYXQiOjE3NDY4NzM0MTMsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.KA1nXqfzXqq97wBIlK-ceUOD_Q-GvWE0UW5i2-I9IuY
+2025-05-10 13:06:35.747 +02:00 [INF] Login API called with username: admin
+2025-05-10 13:06:35.776 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0Njg3NTE5NSwiZXhwIjoxNzc4NDExMTk1LCJpYXQiOjE3NDY4NzUxOTUsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.RvYqX3v-7OJKSEif2J8Jg6zU6d7sCwk8U_x-14T7ttk
+2025-05-10 13:31:24.020 +02:00 [INF] Login API called with username: admin
+2025-05-10 13:31:24.054 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0Njg3NjY4NCwiZXhwIjoxNzc4NDEyNjg0LCJpYXQiOjE3NDY4NzY2ODQsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.42pHSEUw4hj4QhQMNc0tCTQ7RiW6xaCmVUNxlfdnpRw
+2025-05-10 13:35:27.049 +02:00 [INF] Login API called with username: gestor
+2025-05-10 13:35:27.071 +02:00 [INF] Login successful for username: gestor, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJnZXN0b3IiLCJyb2xlIjoiR2VzdG9yTiIsIm5iZiI6MTc0Njg3NjkyNywiZXhwIjoxNzc4NDEyOTI3LCJpYXQiOjE3NDY4NzY5MjcsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.EdzkYhPoYlfgF1WeHePP37sqAL2UCcIscvNS5c_XhcY
+2025-05-10 13:38:17.485 +02:00 [INF] Login API called with username: gestor
+2025-05-10 13:38:17.499 +02:00 [INF] Login successful for username: gestor, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJnZXN0b3IiLCJyb2xlIjoiR2VzdG9yTiIsIm5iZiI6MTc0Njg3NzA5NywiZXhwIjoxNzc4NDEzMDk3LCJpYXQiOjE3NDY4NzcwOTcsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.-RWzweWEFucyHKhN9VmBRKHbAy-Dx6MeDqLbYW-9rFc
+2025-05-10 13:39:09.297 +02:00 [INF] Login API called with username: gestor
+2025-05-10 13:39:09.313 +02:00 [INF] Login successful for username: gestor, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJnZXN0b3IiLCJyb2xlIjoiR2VzdG9yTiIsIm5iZiI6MTc0Njg3NzE0OSwiZXhwIjoxNzc4NDEzMTQ5LCJpYXQiOjE3NDY4NzcxNDksImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.btxq1TFsmgFS2EGFGFZtvUBT_lAn9BXn3q5_84w7SQI
+2025-05-10 13:39:37.743 +02:00 [INF] Login API called with username: gestor
+2025-05-10 13:39:37.749 +02:00 [INF] Login successful for username: gestor, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJnZXN0b3IiLCJyb2xlIjoiR2VzdG9yTiIsIm5iZiI6MTc0Njg3NzE3NywiZXhwIjoxNzc4NDEzMTc3LCJpYXQiOjE3NDY4NzcxNzcsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.CFivgHOr_60q6bwHgzCQEyKrIAp1hU0-wToAkm_12_A
+2025-05-10 13:40:27.364 +02:00 [INF] Login API called with username: gestor
+2025-05-10 13:40:27.380 +02:00 [INF] Login successful for username: gestor, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJnZXN0b3IiLCJyb2xlIjoiR2VzdG9yTiIsIm5iZiI6MTc0Njg3NzIyNywiZXhwIjoxNzc4NDEzMjI3LCJpYXQiOjE3NDY4NzcyMjcsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.daXC9MjP8al3J1p7pYjtk6UYtS-zfsj6-Gq00dyuvaI
+2025-05-10 13:40:37.203 +02:00 [INF] Login API called with username: conductor
+2025-05-10 13:40:37.209 +02:00 [INF] Login successful for username: conductor, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJjb25kdWN0b3IiLCJyb2xlIjoiQ29uZHVjdG9yIiwibmJmIjoxNzQ2ODc3MjM3LCJleHAiOjE3Nzg0MTMyMzcsImlhdCI6MTc0Njg3NzIzNywiaXNzIjoiYWxiYXJ0b2hub3MuY29tIiwiYXVkIjoiYWxiYXJ0b2hub3MuY29tIn0.2wgU27rGFqyic3Utn8E7jnbiC5umhmDcE56HLLSDKQQ
+2025-05-10 13:41:07.378 +02:00 [INF] Login API called with username: conductor
+2025-05-10 13:41:07.389 +02:00 [INF] Login successful for username: conductor, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJjb25kdWN0b3IiLCJyb2xlIjoiQ29uZHVjdG9yIiwibmJmIjoxNzQ2ODc3MjY3LCJleHAiOjE3Nzg0MTMyNjcsImlhdCI6MTc0Njg3NzI2NywiaXNzIjoiYWxiYXJ0b2hub3MuY29tIiwiYXVkIjoiYWxiYXJ0b2hub3MuY29tIn0.oXPZ-Df7A71ZXthn3IrjKTmfA1aJSvBxfmu0GrLTakQ
+2025-05-10 13:59:11.320 +02:00 [INF] Login API called with username: admin
+2025-05-10 13:59:11.352 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0Njg3ODM1MSwiZXhwIjoxNzc4NDE0MzUxLCJpYXQiOjE3NDY4NzgzNTEsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.Pw0NEgdsJlzk5Oe8GEKaXYV4YgAu75cLL0JJ75Lpx5Q
+2025-05-10 14:03:03.026 +02:00 [INF] Login API called with username: admin
+2025-05-10 14:03:03.045 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0Njg3ODU4MywiZXhwIjoxNzc4NDE0NTgzLCJpYXQiOjE3NDY4Nzg1ODMsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.h5C6N8yuSGInzptaH4Gwu8XaBA1aqdJNO7YeMOBRkmQ
+2025-05-10 14:43:41.983 +02:00 [INF] Login API called with username: admin
+2025-05-10 14:43:42.026 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0Njg4MTAyMiwiZXhwIjoxNzc4NDE3MDIyLCJpYXQiOjE3NDY4ODEwMjIsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.4boeo-V3ECk4XNZ1nSjFeYnJGpPzRSIXZLH3e7s8Bg8
+2025-05-10 14:44:35.249 +02:00 [INF] Login API called with username: admin
+2025-05-10 14:44:35.260 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0Njg4MTA3NSwiZXhwIjoxNzc4NDE3MDc1LCJpYXQiOjE3NDY4ODEwNzUsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.bP4FYTqW5ooff-7TaQlvrmKLAUgXs-hKnvacbsKoq3Y
+2025-05-10 14:45:21.907 +02:00 [INF] Login API called with username: admin
+2025-05-10 14:45:21.926 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0Njg4MTEyMSwiZXhwIjoxNzc4NDE3MTIxLCJpYXQiOjE3NDY4ODExMjEsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.-WKBK_zrMeFTaEnVsCRakhAjHzzLz6lZJq3ebJaI8mI
+2025-05-10 14:59:19.486 +02:00 [INF] Login API called with username: admin
+2025-05-10 14:59:19.512 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0Njg4MTk1OSwiZXhwIjoxNzc4NDE3OTU5LCJpYXQiOjE3NDY4ODE5NTksImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.xwuCf32y2A67h1Pniz1TUo4Lp_g02jkPtQPj8Dz_lhc
+2025-05-10 15:02:33.371 +02:00 [INF] Login API called with username: gestor
+2025-05-10 15:02:33.383 +02:00 [INF] Login successful for username: gestor, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJnZXN0b3IiLCJyb2xlIjoiR2VzdG9yTiIsIm5iZiI6MTc0Njg4MjE1MywiZXhwIjoxNzc4NDE4MTUzLCJpYXQiOjE3NDY4ODIxNTMsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.MYR3yq0HOHSqvXScLYuHJql4Ut-VWGBx6TXXPE9EDxw
+2025-05-10 15:10:26.961 +02:00 [INF] Login API called with username: gestor
+2025-05-10 15:10:26.987 +02:00 [INF] Login successful for username: gestor, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJnZXN0b3IiLCJyb2xlIjoiR2VzdG9yTiIsIm5iZiI6MTc0Njg4MjYyNiwiZXhwIjoxNzc4NDE4NjI2LCJpYXQiOjE3NDY4ODI2MjYsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.zw1xxjPBrNGEh655B5dHRSt_JfAn4SaLo-INW_3M8qs
+2025-05-10 15:12:47.252 +02:00 [INF] Login API called with username: gestor
+2025-05-10 15:12:47.264 +02:00 [INF] Login successful for username: gestor, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJnZXN0b3IiLCJyb2xlIjoiR2VzdG9yTiIsIm5iZiI6MTc0Njg4Mjc2NywiZXhwIjoxNzc4NDE4NzY3LCJpYXQiOjE3NDY4ODI3NjcsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.vYN3hAlilgkOhyVocUxluoJfxBb4LgVbmofmV5rSh2s
+2025-05-10 15:21:47.886 +02:00 [INF] Login API called with username: gestor
+2025-05-10 15:21:47.909 +02:00 [INF] Login successful for username: gestor, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJnZXN0b3IiLCJyb2xlIjoiR2VzdG9yTiIsIm5iZiI6MTc0Njg4MzMwNywiZXhwIjoxNzc4NDE5MzA3LCJpYXQiOjE3NDY4ODMzMDcsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.U39rMfvAXy3y2wf8Xt2tLpr6sud1E3iwfTwGZYl4RCM
+2025-05-10 15:22:07.394 +02:00 [INF] Login API called with username: gestor
+2025-05-10 15:22:07.400 +02:00 [INF] Login successful for username: gestor, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJnZXN0b3IiLCJyb2xlIjoiR2VzdG9yTiIsIm5iZiI6MTc0Njg4MzMyNywiZXhwIjoxNzc4NDE5MzI3LCJpYXQiOjE3NDY4ODMzMjcsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.ijLY8t0LZPCrbLeeAOAId_BqP7BTbt3McND0nJKrItg
+2025-05-10 15:23:17.407 +02:00 [INF] Login API called with username: gestor
+2025-05-10 15:23:17.417 +02:00 [INF] Login successful for username: gestor, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJnZXN0b3IiLCJyb2xlIjoiR2VzdG9yTiIsIm5iZiI6MTc0Njg4MzM5NywiZXhwIjoxNzc4NDE5Mzk3LCJpYXQiOjE3NDY4ODMzOTcsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.cNgICM1crcyLMPrGppQcZB-7kiL_yTqDEQG81wv2diQ
+2025-05-10 15:23:20.129 +02:00 [INF] Login API called with username: gestor
+2025-05-10 15:23:20.134 +02:00 [INF] Login successful for username: gestor, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJnZXN0b3IiLCJyb2xlIjoiR2VzdG9yTiIsIm5iZiI6MTc0Njg4MzQwMCwiZXhwIjoxNzc4NDE5NDAwLCJpYXQiOjE3NDY4ODM0MDAsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.GeGfJstk7sXOjCFcjfRNycvvJSLSRDCQF-5Q_8eNtPM
+2025-05-10 15:23:25.391 +02:00 [INF] Login API called with username: gestor
+2025-05-10 15:23:25.397 +02:00 [INF] Login successful for username: gestor, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJnZXN0b3IiLCJyb2xlIjoiR2VzdG9yTiIsIm5iZiI6MTc0Njg4MzQwNSwiZXhwIjoxNzc4NDE5NDA1LCJpYXQiOjE3NDY4ODM0MDUsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.KvqR7fSBwVyseJAsELt0Z_6UgeSHeDW6zoPSHUxpsuU
+2025-05-10 16:17:59.392 +02:00 [INF] Login API called with username: gestor
+2025-05-10 16:17:59.417 +02:00 [INF] Login successful for username: gestor, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJnZXN0b3IiLCJyb2xlIjoiR2VzdG9yTiIsIm5iZiI6MTc0Njg4NjY3OSwiZXhwIjoxNzc4NDIyNjc5LCJpYXQiOjE3NDY4ODY2NzksImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.-v6438YOQk9thUCd76UJXklYfOrhoGygMPaMK3kH_Cs
+2025-05-10 16:27:13.151 +02:00 [INF] Login API called with username: gestor
+2025-05-10 16:27:13.183 +02:00 [INF] Login successful for username: gestor, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJnZXN0b3IiLCJyb2xlIjoiR2VzdG9yTiIsIm5iZiI6MTc0Njg4NzIzMywiZXhwIjoxNzc4NDIzMjMzLCJpYXQiOjE3NDY4ODcyMzMsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.2DNOFPkWstoPYMN95PlBNvWbn4JmN1zlAqYG5QAJ__E
+2025-05-10 16:47:29.932 +02:00 [INF] API is starting
+2025-05-10 16:47:42.680 +02:00 [INF] Login API called with username: gestor
+2025-05-10 16:47:43.706 +02:00 [INF] Login successful for username: gestor, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJnZXN0b3IiLCJyb2xlIjoiR2VzdG9yTiIsIm5iZiI6MTc0Njg4ODQ2MywiZXhwIjoxNzc4NDI0NDYzLCJpYXQiOjE3NDY4ODg0NjMsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.lLLAi2WQ6wzRCsVdwPCO7Mm8JBQz8Xn29CYMMqBAqsM
+2025-05-10 17:11:26.777 +02:00 [INF] Login API called with username: gestor
+2025-05-10 17:11:26.802 +02:00 [INF] Login successful for username: gestor, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJnZXN0b3IiLCJyb2xlIjoiR2VzdG9yTiIsIm5iZiI6MTc0Njg4OTg4NiwiZXhwIjoxNzc4NDI1ODg2LCJpYXQiOjE3NDY4ODk4ODYsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.Ys5G68YI0Mx3G612P-4MIBnSwdPgbvBvk-CYrmk74rs
+2025-05-10 17:13:24.424 +02:00 [INF] Login API called with username: admin
+2025-05-10 17:13:24.436 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0Njg5MDAwNCwiZXhwIjoxNzc4NDI2MDA0LCJpYXQiOjE3NDY4OTAwMDQsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.QVNvopXOjRdxNFoAtGNPYUpNwK3mXuD7qXLwfUUtxvg
+2025-05-11 11:54:42.179 +02:00 [INF] API is starting
+2025-05-11 11:55:09.577 +02:00 [INF] Login API called with username: gestor
+2025-05-11 11:55:10.707 +02:00 [INF] Login successful for username: gestor, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJnZXN0b3IiLCJyb2xlIjoiR2VzdG9yTiIsIm5iZiI6MTc0Njk1NzMxMCwiZXhwIjoxNzc4NDkzMzEwLCJpYXQiOjE3NDY5NTczMTAsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.rZbZmnja-yU4px5vuFmlqMAOSvIPqRSCRSpzjD4g3Y0
+2025-05-11 13:22:47.052 +02:00 [INF] Login API called with username: admin
+2025-05-11 13:22:47.091 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0Njk2MjU2NywiZXhwIjoxNzc4NDk4NTY3LCJpYXQiOjE3NDY5NjI1NjcsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.jt9FeqdTiYX69u7ZsN3tum2BHB4bir_1rN-NKYKsye0
+2025-05-11 13:23:56.656 +02:00 [INF] Login API called with username: gestor
+2025-05-11 13:23:56.667 +02:00 [INF] Login successful for username: gestor, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJnZXN0b3IiLCJyb2xlIjoiR2VzdG9yTiIsIm5iZiI6MTc0Njk2MjYzNiwiZXhwIjoxNzc4NDk4NjM2LCJpYXQiOjE3NDY5NjI2MzYsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.yWZ7ccsfyKJeBB3UVS91sOXNcdpJcEgsi6pRklfktrM
+2025-05-11 13:25:18.040 +02:00 [INF] Login API called with username: admin
+2025-05-11 13:25:18.056 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0Njk2MjcxOCwiZXhwIjoxNzc4NDk4NzE4LCJpYXQiOjE3NDY5NjI3MTgsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.-A3Y7wPxgopUWHfjRDOYZOQDSfPWrRIhf2grRi3Cy4M
+2025-05-11 13:27:41.344 +02:00 [INF] Login API called with username: gestor
+2025-05-11 13:27:41.357 +02:00 [INF] Login successful for username: gestor, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJnZXN0b3IiLCJyb2xlIjoiR2VzdG9yTiIsIm5iZiI6MTc0Njk2Mjg2MSwiZXhwIjoxNzc4NDk4ODYxLCJpYXQiOjE3NDY5NjI4NjEsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.4LjZdSYAvNAUmk10NPUrd28LtKJGjEBLnX1nsy6KDCU
+2025-05-11 13:39:05.032 +02:00 [INF] Login API called with username: admin
+2025-05-11 13:39:05.054 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0Njk2MzU0NSwiZXhwIjoxNzc4NDk5NTQ1LCJpYXQiOjE3NDY5NjM1NDUsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.kQlUrR3Y1MvI-rRQaNw8Ih0rh4wd-puVqESiYNrqS_4
+2025-05-11 13:40:30.238 +02:00 [INF] Login API called with username: admin
+2025-05-11 13:40:30.250 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0Njk2MzYzMCwiZXhwIjoxNzc4NDk5NjMwLCJpYXQiOjE3NDY5NjM2MzAsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.4P6Gm-4yEbjDl1JN0Nfgi27Xnag9kO_MAOexQ3RvDDA
+2025-05-11 13:41:51.839 +02:00 [INF] Login API called with username: admin
+2025-05-11 13:41:51.859 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0Njk2MzcxMSwiZXhwIjoxNzc4NDk5NzExLCJpYXQiOjE3NDY5NjM3MTEsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.OxUTV1Bu7bDiyJsaKzZoTvaS2fqiJnQyCTbebN_tsgo
+2025-05-11 13:43:39.562 +02:00 [INF] Login API called with username: admin
+2025-05-11 13:43:39.574 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0Njk2MzgxOSwiZXhwIjoxNzc4NDk5ODE5LCJpYXQiOjE3NDY5NjM4MTksImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.hsonSJmqLu8B4M3ubis2y-7yPXjWh2SheC4bSzd2XEI
+2025-05-13 19:51:18.602 +02:00 [INF] API is starting
+2025-05-13 19:51:35.374 +02:00 [INF] Login API called with username: admin
+2025-05-13 19:51:36.421 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NzE1ODY5NiwiZXhwIjoxNzc4Njk0Njk2LCJpYXQiOjE3NDcxNTg2OTYsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.05837SnAikTV6l8gWfnqLlsHYTYaZitwyCNqco8nNkE
+2025-05-13 19:52:09.074 +02:00 [INF] Login API called with username: gestor
+2025-05-13 19:52:09.081 +02:00 [INF] Login successful for username: gestor, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJnZXN0b3IiLCJyb2xlIjoiR2VzdG9yTiIsIm5iZiI6MTc0NzE1ODcyOSwiZXhwIjoxNzc4Njk0NzI5LCJpYXQiOjE3NDcxNTg3MjksImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.i_7yraR9wsa-8_8c6wXYhYmC6otHqUpLr2z9k1bJghk
+2025-05-13 20:00:13.135 +02:00 [INF] Login API called with username: admin
+2025-05-13 20:00:13.168 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NzE1OTIxMywiZXhwIjoxNzc4Njk1MjEzLCJpYXQiOjE3NDcxNTkyMTMsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.nM3X6R6UefCFDNVuRkIsmcrMt8gIvU8ThS0mat-zurM
+2025-05-13 20:05:13.402 +02:00 [INF] Login API called with username: admin
+2025-05-13 20:05:13.419 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NzE1OTUxMywiZXhwIjoxNzc4Njk1NTEzLCJpYXQiOjE3NDcxNTk1MTMsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.w53VsdM4uAqJ94IKPtjxQj92PScL8oXcHKPd8GOAQVM
+2025-05-13 20:05:49.334 +02:00 [INF] Login API called with username: admin
+2025-05-13 20:05:49.340 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NzE1OTU0OSwiZXhwIjoxNzc4Njk1NTQ5LCJpYXQiOjE3NDcxNTk1NDksImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.Bhee6G2X0x_YrXLvESIHudnSqJ2lLiYc1qMFpt6HT9o
+2025-05-13 20:12:31.264 +02:00 [INF] Login API called with username: admin
+2025-05-13 20:12:31.285 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NzE1OTk1MSwiZXhwIjoxNzc4Njk1OTUxLCJpYXQiOjE3NDcxNTk5NTEsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.WQCZhksqlBVuwtNTKGePrtUjQUXHChuqSuTSNc8ddo4
+2025-05-13 20:12:33.552 +02:00 [INF] Login API called with username: admin
+2025-05-13 20:12:33.559 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NzE1OTk1MywiZXhwIjoxNzc4Njk1OTUzLCJpYXQiOjE3NDcxNTk5NTMsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.APw8quf0Cgv0gPoBIkATJRfDmxLyhFwE1tbGFNEb8Zg
+2025-05-13 20:18:41.708 +02:00 [INF] Login API called with username: admin
+2025-05-13 20:18:41.732 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NzE2MDMyMSwiZXhwIjoxNzc4Njk2MzIxLCJpYXQiOjE3NDcxNjAzMjEsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.gyjcEjfEqE3j2fDJ3jthnge7CMaswph0gDVmZe16P9w
+2025-05-13 20:18:56.960 +02:00 [INF] Login API called with username: admin
+2025-05-13 20:18:56.967 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NzE2MDMzNiwiZXhwIjoxNzc4Njk2MzM2LCJpYXQiOjE3NDcxNjAzMzYsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.aLK_di_bm3VCsdFk0n_dUtaO-ojnJFyT3Gs0RN19jR0
+2025-05-13 20:18:59.869 +02:00 [INF] Login API called with username: admin
+2025-05-13 20:18:59.876 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NzE2MDMzOSwiZXhwIjoxNzc4Njk2MzM5LCJpYXQiOjE3NDcxNjAzMzksImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.X2F8BESiEwu6hOHiBx1_AhZ6R_mVc7yP0II_FkROC9w
+2025-05-13 21:01:06.450 +02:00 [INF] Login API called with username: admin
+2025-05-13 21:01:06.487 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NzE2Mjg2NiwiZXhwIjoxNzc4Njk4ODY2LCJpYXQiOjE3NDcxNjI4NjYsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.W6CrPVu5JMSss5RJ8Bijkul3WRr3bnfu_pXvZozdZZU
+2025-05-13 21:05:51.825 +02:00 [INF] Login API called with username: gestor
+2025-05-13 21:05:51.842 +02:00 [INF] Login successful for username: gestor, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJnZXN0b3IiLCJyb2xlIjoiR2VzdG9yTiIsIm5iZiI6MTc0NzE2MzE1MSwiZXhwIjoxNzc4Njk5MTUxLCJpYXQiOjE3NDcxNjMxNTEsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.Keq_HdmbhyHZNL9_v2PrdFFjbf6Je2z4xT5Obxpx_Fc
+2025-05-13 21:06:27.611 +02:00 [INF] Login API called with username: conductor
+2025-05-13 21:06:27.623 +02:00 [INF] Login successful for username: conductor, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJjb25kdWN0b3IiLCJyb2xlIjoiQ29uZHVjdG9yIiwibmJmIjoxNzQ3MTYzMTg3LCJleHAiOjE3Nzg2OTkxODcsImlhdCI6MTc0NzE2MzE4NywiaXNzIjoiYWxiYXJ0b2hub3MuY29tIiwiYXVkIjoiYWxiYXJ0b2hub3MuY29tIn0.GapDUHB2I0wKFd6EFOYm3LSm7VFHVMyxi1oGYxe35hg
+2025-05-13 21:29:59.317 +02:00 [INF] Login API called with username: admin
+2025-05-13 21:29:59.334 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NzE2NDU5OSwiZXhwIjoxNzc4NzAwNTk5LCJpYXQiOjE3NDcxNjQ1OTksImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.Eg0i_d37Uw1odTZAbIdlwPz1lpAotV-1DWfQjFArfFE
+2025-05-14 18:46:44.797 +02:00 [INF] API is starting
+2025-05-14 18:55:43.978 +02:00 [INF] Login API called with username: admin
+2025-05-14 18:55:44.997 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NzI0MTc0NCwiZXhwIjoxNzc4Nzc3NzQ0LCJpYXQiOjE3NDcyNDE3NDQsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.vZl33JtNe6g3eukXL_Ziw9xR2SlDHsQaRkmi4Z_Y_Iw
+2025-05-14 19:12:01.871 +02:00 [INF] Login API called with username: admin
+2025-05-14 19:12:01.902 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NzI0MjcyMSwiZXhwIjoxNzc4Nzc4NzIxLCJpYXQiOjE3NDcyNDI3MjEsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.wRsfMFiqnbGwLOCnAud3JxbedhVosvFMCMbI0zgArC8
+2025-05-14 19:27:17.589 +02:00 [INF] Login API called with username: admin
+2025-05-14 19:27:17.627 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NzI0MzYzNywiZXhwIjoxNzc4Nzc5NjM3LCJpYXQiOjE3NDcyNDM2MzcsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.e0rpbzPQ0-eVQEnDlQdOBdL62xb7tIMKs0RDcIXdvuE
+2025-05-14 19:35:29.703 +02:00 [INF] Login API called with username: admin
+2025-05-14 19:35:29.736 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NzI0NDEyOSwiZXhwIjoxNzc4NzgwMTI5LCJpYXQiOjE3NDcyNDQxMjksImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.Td4VBH5dhTE_MBXZlvqjf-RlYfOwd2e4ji-0VAhJC-c
+2025-05-14 20:26:20.510 +02:00 [INF] API is starting
+2025-05-14 20:32:34.498 +02:00 [INF] Login API called with username: admin
+2025-05-14 20:32:35.459 +02:00 [INF] Login API called with username: admin
+2025-05-14 20:32:35.514 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NzI0NzU1NSwiZXhwIjoxNzc4NzgzNTU1LCJpYXQiOjE3NDcyNDc1NTUsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.bELyoW1cAMJRKeYmprfgJeslO0j1icnsHESgxA9BeTM
+2025-05-14 20:32:35.532 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NzI0NzU1NSwiZXhwIjoxNzc4NzgzNTU1LCJpYXQiOjE3NDcyNDc1NTUsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.bELyoW1cAMJRKeYmprfgJeslO0j1icnsHESgxA9BeTM
+2025-05-14 20:32:51.040 +02:00 [INF] Login API called with username: admin
+2025-05-14 20:32:51.048 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NzI0NzU3MSwiZXhwIjoxNzc4NzgzNTcxLCJpYXQiOjE3NDcyNDc1NzEsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.CiddYf2oDFN5tS0nfHs9a_YXd2XYut5NSjd8hetzxRw
+2025-05-14 20:33:46.801 +02:00 [INF] Vehicle: 1194LLS successfully updated
+2025-05-14 21:02:00.867 +02:00 [INF] Login API called with username: admin
+2025-05-14 21:02:00.897 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NzI0OTMyMCwiZXhwIjoxNzc4Nzg1MzIwLCJpYXQiOjE3NDcyNDkzMjAsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.rbNhFKA1fx6T-mX9MeCLacKEZb4jql3xwkarIOu3ow8
+2025-05-14 21:11:19.832 +02:00 [INF] API is starting
+2025-05-14 21:11:46.082 +02:00 [INF] Login API called with username: admin
+2025-05-14 21:11:46.242 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NzI0OTkwNiwiZXhwIjoxNzc4Nzg1OTA2LCJpYXQiOjE3NDcyNDk5MDYsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.FSYB5OSl0HpZxwqEjnn9dElPFRucl3QAeVXUfsZrfRc
+2025-05-14 21:12:30.603 +02:00 [INF] Login API called with username: string
+2025-05-14 21:12:30.611 +02:00 [WRN] Invalid login attempt for username: string
+2025-05-14 21:13:57.787 +02:00 [INF] Login API called with username: admin
+2025-05-14 21:13:57.824 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NzI1MDAzNywiZXhwIjoxNzc4Nzg2MDM3LCJpYXQiOjE3NDcyNTAwMzcsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.5Q1l7cod8zCup29T4JxtY89r6SJeCZEDctACAM7q1yA
+2025-05-14 21:18:51.026 +02:00 [INF] API is starting
+2025-05-14 21:19:18.676 +02:00 [INF] Login API called with username: admin
+2025-05-14 21:19:19.814 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NzI1MDM1OSwiZXhwIjoxNzc4Nzg2MzU5LCJpYXQiOjE3NDcyNTAzNTksImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.gMEI46wZzRaiIbnTmbXUQo-Uq_3sicKqPMrIzxXn_n8
+2025-05-14 21:22:00.060 +02:00 [INF] Login API called with username: admin
+2025-05-14 21:22:00.129 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NzI1MDUyMCwiZXhwIjoxNzc4Nzg2NTIwLCJpYXQiOjE3NDcyNTA1MjAsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.K5DFse96OCl2IO8MYcPb-Hkl7sVjGapVJr9SAmgvkX4
+2025-05-15 19:44:33.205 +02:00 [INF] API is starting
+2025-05-15 21:00:28.016 +02:00 [INF] API is starting
+2025-05-17 12:18:56.734 +02:00 [INF] API is starting
+2025-05-17 12:19:19.029 +02:00 [INF] Login API called with username: admin
+2025-05-17 12:19:20.058 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NzQ3NzE2MCwiZXhwIjoxNzc5MDEzMTYwLCJpYXQiOjE3NDc0NzcxNjAsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.Z8S9aMfB9ncZmOVlRZbNF8Ud-8n2E_rtZSFwtqlksq0
+2025-05-17 12:20:06.725 +02:00 [INF] Vehicle: 1194LLS successfully updated
+2025-05-17 12:31:24.892 +02:00 [INF] Login API called with username: admin
+2025-05-17 12:31:24.916 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NzQ3Nzg4NCwiZXhwIjoxNzc5MDEzODg0LCJpYXQiOjE3NDc0Nzc4ODQsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.hF1jz2ozDtikr1o480Ac6lNmgsGdFQ1nZ3b-0oZ6CfY
+2025-05-17 12:31:33.864 +02:00 [INF] Vehicle: 1194LLS successfully deleted
+2025-05-17 12:33:04.011 +02:00 [INF] Login API called with username: admin
+2025-05-17 12:33:04.018 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NzQ3Nzk4NCwiZXhwIjoxNzc5MDEzOTg0LCJpYXQiOjE3NDc0Nzc5ODQsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.LLi1I1S7Fd7aU0dpdHY5A1cnkjduvcGiCo_zv0YhJPM
+2025-05-17 12:33:46.419 +02:00 [INF] Vehicle: 1194LLP successfully created
+2025-05-17 12:34:02.460 +02:00 [INF] Vehicle: 1194LLP successfully updated
+2025-05-17 12:34:56.939 +02:00 [INF] Vehicle: 9988CSN successfully created
+2025-05-17 12:35:01.859 +02:00 [INF] Vehicle: 9988CSN successfully deleted
+2025-05-17 12:44:51.223 +02:00 [INF] Login API called with username: gestor
+2025-05-17 12:44:51.242 +02:00 [INF] Login successful for username: gestor, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJnZXN0b3IiLCJyb2xlIjoiR2VzdG9yTiIsIm5iZiI6MTc0NzQ3ODY5MSwiZXhwIjoxNzc5MDE0NjkxLCJpYXQiOjE3NDc0Nzg2OTEsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.ImgpOYbewp9atkgB9mbaq_hEuyDiP1QVebl02P9G2B0
+2025-05-17 13:56:48.117 +02:00 [INF] API is starting
+2025-05-17 14:31:39.637 +02:00 [INF] API is starting
+2025-05-17 14:40:33.556 +02:00 [INF] API is starting
+2025-05-17 15:02:21.136 +02:00 [INF] Login API called with username: admin
+2025-05-17 15:02:22.131 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NzQ4Njk0MiwiZXhwIjoxNzc5MDIyOTQyLCJpYXQiOjE3NDc0ODY5NDIsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.Go5_jxiETu7BAaggPjKAKZ7KCYbHhhf1oWEh6eXPgP0
+2025-05-17 15:03:45.312 +02:00 [INF] Login API called with username: admin
+2025-05-17 15:03:45.321 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NzQ4NzAyNSwiZXhwIjoxNzc5MDIzMDI1LCJpYXQiOjE3NDc0ODcwMjUsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.UcqHLpkZ0rSKwLT9NnZ3VzOfwJgNFPjp0Zi_ibkatOI
+2025-05-17 15:04:01.862 +02:00 [INF] Login API called with username: admin
+2025-05-17 15:04:01.869 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NzQ4NzA0MSwiZXhwIjoxNzc5MDIzMDQxLCJpYXQiOjE3NDc0ODcwNDEsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.McX2yYfciCvRgX0m5YYnEbByXvRtcZvLtQfXCc2yGSA
+2025-05-17 15:16:53.607 +02:00 [INF] Login API called with username: gestor
+2025-05-17 15:16:53.636 +02:00 [INF] Login successful for username: gestor, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJnZXN0b3IiLCJyb2xlIjoiR2VzdG9yTiIsIm5iZiI6MTc0NzQ4NzgxMywiZXhwIjoxNzc5MDIzODEzLCJpYXQiOjE3NDc0ODc4MTMsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9._vZlmvLf5vfj9ZCQZ8d0KD_fGfF76QlmydTazMOyYCk
+2025-05-17 15:20:03.597 +02:00 [INF] Login API called with username: gestor
+2025-05-17 15:20:03.612 +02:00 [INF] Login successful for username: gestor, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJnZXN0b3IiLCJyb2xlIjoiR2VzdG9yTiIsIm5iZiI6MTc0NzQ4ODAwMywiZXhwIjoxNzc5MDI0MDAzLCJpYXQiOjE3NDc0ODgwMDMsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.5F8JVsip4yOlAcmQ2fjMX_6gv2gddTZLd5RNzqClF3s
+2025-05-17 15:21:49.429 +02:00 [INF] Vehicle: 1194LLP successfully updated
+2025-05-17 15:22:08.812 +02:00 [INF] Login API called with username: admin
+2025-05-17 15:22:08.818 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NzQ4ODEyOCwiZXhwIjoxNzc5MDI0MTI4LCJpYXQiOjE3NDc0ODgxMjgsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.41r4rjnz7h2jtA4hgdaRc61D32AU_4HvjmUOX9CRW5s
+2025-05-17 15:22:44.478 +02:00 [INF] Vehicle: 5554KSD successfully created
+2025-05-17 15:22:56.743 +02:00 [INF] Vehicle: 5554KSD successfully updated
+2025-05-17 15:23:02.707 +02:00 [INF] Vehicle: 5554KSD successfully deleted
+2025-05-17 18:24:45.235 +02:00 [INF] Login API called with username: admin
+2025-05-17 18:24:45.299 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NzQ5OTA4NSwiZXhwIjoxNzc5MDM1MDg1LCJpYXQiOjE3NDc0OTkwODUsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.FxrLRY-JUHrVjhXcUg5dNTVvfHwfiul6MCbBlUe_mow
+2025-05-17 18:24:58.067 +02:00 [INF] Login API called with username: admin
+2025-05-17 18:24:58.074 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NzQ5OTA5OCwiZXhwIjoxNzc5MDM1MDk4LCJpYXQiOjE3NDc0OTkwOTgsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.m-dLgP6sS7mVakm_GHKpvY2xXMpCSBJYmQAlZ607NKA
+2025-05-17 18:59:33.126 +02:00 [INF] API is starting
+2025-05-17 19:25:26.666 +02:00 [INF] API is starting
+2025-05-17 19:41:52.586 +02:00 [INF] API is starting
+2025-05-17 19:52:37.816 +02:00 [INF] Login API called with username: admin
+2025-05-17 19:52:37.988 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NzUwNDM1NywiZXhwIjoxNzc5MDQwMzU3LCJpYXQiOjE3NDc1MDQzNTcsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.t1vFwLndF1e9sRCSxICOvdC8SsmeNTQGNJzHczLxApc
+2025-05-17 20:16:30.656 +02:00 [INF] Login API called with username: admin
+2025-05-17 20:16:30.680 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NzUwNTc5MCwiZXhwIjoxNzc5MDQxNzkwLCJpYXQiOjE3NDc1MDU3OTAsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.T3BoZ0DCnZOIx88qagGUu0Vb853noYH7HOkIMjvpDAE
+2025-05-17 20:18:59.937 +02:00 [INF] Login API called with username: admin
+2025-05-17 20:18:59.953 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NzUwNTkzOSwiZXhwIjoxNzc5MDQxOTM5LCJpYXQiOjE3NDc1MDU5MzksImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.WXqb0PIkbOarF0lg8-mBH7nnGBdqWWYMsGf93zTsJ4A
+2025-05-17 20:23:39.269 +02:00 [INF] Login API called with username: admin
+2025-05-17 20:23:39.286 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NzUwNjIxOSwiZXhwIjoxNzc5MDQyMjE5LCJpYXQiOjE3NDc1MDYyMTksImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.CfZ52JACjbKxv05c-V4jUqY66AXce1NK8HAUpNue4ME
+2025-05-17 20:27:13.865 +02:00 [INF] Login API called with username: admin
+2025-05-17 20:27:13.881 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NzUwNjQzMywiZXhwIjoxNzc5MDQyNDMzLCJpYXQiOjE3NDc1MDY0MzMsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.MXDmquvlgCoDCx7JGktz5-kQBHXQsZdxK5vaNlMfXqI
+2025-05-17 20:33:26.271 +02:00 [INF] Login API called with username: admin
+2025-05-17 20:33:26.297 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NzUwNjgwNiwiZXhwIjoxNzc5MDQyODA2LCJpYXQiOjE3NDc1MDY4MDYsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.FXi3Isfud5op1ar-rUp55w-98x8-MLzmyvj8OVAg5Ro
+2025-05-17 20:47:04.205 +02:00 [INF] Login API called with username: admin
+2025-05-17 20:47:04.232 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NzUwNzYyNCwiZXhwIjoxNzc5MDQzNjI0LCJpYXQiOjE3NDc1MDc2MjQsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.sj6hFZcwCDqXjAKLKMBMWTUufeJTk8AkrfIGUy_SVG0
+2025-05-17 20:52:02.462 +02:00 [INF] Login API called with username: admin
+2025-05-17 20:52:02.480 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NzUwNzkyMiwiZXhwIjoxNzc5MDQzOTIyLCJpYXQiOjE3NDc1MDc5MjIsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.uTFp-fTkJbtXm55FZZHd4wfsbocDNO41G-2rqPq1QvM
+2025-05-17 20:53:50.193 +02:00 [INF] Login API called with username: admin
+2025-05-17 20:53:50.207 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NzUwODAzMCwiZXhwIjoxNzc5MDQ0MDMwLCJpYXQiOjE3NDc1MDgwMzAsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.sSxs72i8HReqS40c-is7HiNEfgqOlje5d7CvJul56lQ
+2025-05-17 20:55:32.392 +02:00 [INF] Login API called with username: gestor
+2025-05-17 20:55:32.407 +02:00 [INF] Login successful for username: gestor, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJnZXN0b3IiLCJyb2xlIjoiR2VzdG9yTiIsIm5iZiI6MTc0NzUwODEzMiwiZXhwIjoxNzc5MDQ0MTMyLCJpYXQiOjE3NDc1MDgxMzIsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.tLfQe87YmnDUVx-018Zcw-Va_UxsFTaT4rA_lIU7B0A
+2025-05-17 20:55:35.907 +02:00 [INF] Vehicle: 7744GSN successfully updated
+2025-05-17 20:55:37.587 +02:00 [INF] Vehicle: 7744GSN successfully updated
+2025-05-17 20:55:39.201 +02:00 [INF] Vehicle: 7744GSN successfully updated
+2025-05-17 20:55:41.125 +02:00 [INF] Vehicle: 7744GSN successfully updated
+2025-05-17 20:57:06.074 +02:00 [INF] Vehicle: 1194LLP successfully updated
+2025-05-17 20:57:07.628 +02:00 [INF] Vehicle: 1194LLP successfully updated
+2025-05-17 20:57:25.542 +02:00 [INF] Login API called with username: admin
+2025-05-17 20:57:25.548 +02:00 [INF] Login successful for username: admin, Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTc0NzUwODI0NSwiZXhwIjoxNzc5MDQ0MjQ1LCJpYXQiOjE3NDc1MDgyNDUsImlzcyI6ImFsYmFydG9obm9zLmNvbSIsImF1ZCI6ImFsYmFydG9obm9zLmNvbSJ9.D-W4J6pOpd0B6HdVD61PTQ9IO5tujGFDpdOl_SBBrZg

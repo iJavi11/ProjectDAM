@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace albartohnosAPI.Models;
 
+[Table("Usuarios")]
 public partial class Usuario
 {
     [Key]
@@ -34,8 +35,10 @@ public partial class Usuario
 
     public sbyte Activo { get; set; }
 
+    [Column("Fecha_Alta")]
     public DateOnly? FechaAlta { get; set; }
 
+    [Column("Fecha_Baja")]
     public DateOnly? FechaBaja { get; set; }
 
     public virtual Perfil PerfilNavigation { get; set; } = null!;

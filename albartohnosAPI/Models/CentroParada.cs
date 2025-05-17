@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace albartohnosAPI.Models;
 
+[Table("CentrosParada")]
 public partial class CentroParada
 {
     [Key]

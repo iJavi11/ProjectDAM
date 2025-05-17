@@ -1,14 +1,15 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using albartohnosAPI.Models;
+using System;
 
 namespace albartohnosAPI.Data
 {
     public class ApplicationDbContext : DbContext
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
-        {
+        public ApplicationDbContext() : base() { }
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 
-        }
+        // Aquí se agregarán automáticamente las clases generadas
         public DbSet<albartohnosAPI.Models.Usuario> Usuario { get; set; } = default!;
         public DbSet<albartohnosAPI.Models.Vehiculo> Vehiculo { get; set; } = default!;
         public DbSet<albartohnosAPI.Models.TipoPedido> TipoPedido { get; set; } = default!;
@@ -25,6 +26,13 @@ namespace albartohnosAPI.Data
         public DbSet<albartohnosAPI.Models.EstadoParada> EstadoParada { get; set; } = default!;
         public DbSet<albartohnosAPI.Models.CentroParada> CentroParada { get; set; } = default!;
 
-        // Aquí se agregarán automáticamente las clases generadas
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseMySql(
+                "Server=localhost;Database=albertobartolomehnos;User=root;Password=Nagato@24!;",
+                new MySqlServerVersion(new Version(8, 0, 32)) // Cambia por la versión de tu servidor MySQL
+            );
+            // optionsBuilder.UseLazyLoadingProxies();
+        }
     }
 }

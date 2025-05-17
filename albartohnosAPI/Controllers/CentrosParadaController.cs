@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using albartohnosAPI.Data;
 using albartohnosAPI.Models;
+using Serilog;
 
 namespace albartohnosAPI.Controllers
 {
@@ -23,16 +24,23 @@ namespace albartohnosAPI.Controllers
 
         // GET: api/CentrosParada
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<CentroParada>>> GetCentroParada()
+        public async Task<List<CentroParada>> GetAllCentrosParada()
         {
-            return await _context.CentroParada.ToListAsync();
+            return await Negocio.GetAllStopCenters();
+        }
+
+        // GET: api/CentrosParada/Almacenes
+        [HttpGet("Almacenes")]
+        public async Task<List<CentroParada>> GetAllAlmacenes()
+        {
+            return await Negocio.GetAllWarehouses();
         }
 
         // GET: api/CentrosParada/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<CentroParada>> GetCentroParada(string id)
+        public async Task<ActionResult<CentroParada>> GetCentroParadaById(string id)
         {
-            var centroParada = await _context.CentroParada.FindAsync(id);
+            var centroParada = await Negocio.GetStopCenterById(id);
 
             if (centroParada == null)
             {
@@ -57,15 +65,18 @@ namespace albartohnosAPI.Controllers
             try
             {
                 await _context.SaveChangesAsync();
+                Log.Information($"Stop Center: {centroParada.Id} - {centroParada.Nombre} successfully updated");
             }
-            catch (DbUpdateConcurrencyException)
+            catch (DbUpdateConcurrencyException dbEx)
             {
-                if (!CentroParadaExists(id))
+                if (!Negocio.StopCenterExists(id))
                 {
+                    Log.Warning($"Stop Center -- {centroParada.Id} -- Not Found");
                     return NotFound();
                 }
                 else
                 {
+                    Log.Error($"An error occurred while editing a stop center: {dbEx.Message}");
                     throw;
                 }
             }
@@ -82,15 +93,18 @@ namespace albartohnosAPI.Controllers
             try
             {
                 await _context.SaveChangesAsync();
+                Log.Information($"Stop Center: {centroParada.Id} - {centroParada.Nombre} successfully created");
             }
-            catch (DbUpdateException)
+            catch (DbUpdateException dbEx)
             {
-                if (CentroParadaExists(centroParada.Id))
+                if (Negocio.StopCenterExists(centroParada.Id))
                 {
+                    Log.Warning($"Stop Center -- {centroParada.Id} - {centroParada.Nombre} -- already exits");
                     return Conflict();
                 }
                 else
                 {
+                    Log.Error($"An error occurred while editing a stop center: {dbEx.Message}");
                     throw;
                 }
             }
@@ -102,21 +116,19 @@ namespace albartohnosAPI.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCentroParada(string id)
         {
-            var centroParada = await _context.CentroParada.FindAsync(id);
+            var centroParada = await Negocio.GetStopCenterById(id);
             if (centroParada == null)
             {
+                Log.Warning($"Stop Center: {id} does not exits");
                 return NotFound();
             }
 
             _context.CentroParada.Remove(centroParada);
             await _context.SaveChangesAsync();
 
-            return NoContent();
-        }
+            Log.Information($"Stop Center: {centroParada.Id} - {centroParada.Nombre} successfully deleted");
 
-        private bool CentroParadaExists(string id)
-        {
-            return _context.CentroParada.Any(e => e.Id == id);
+            return NoContent();
         }
     }
 }

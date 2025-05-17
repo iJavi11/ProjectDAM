@@ -23,10 +23,17 @@ namespace albartohnosAPI.Controllers
 
         // GET: api/EstadosParada
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<EstadoParada>>> GetEstadoParada()
+        public async Task<List<EstadoParada>> GetEstadoParada()
         {
-            return await _context.EstadoParada.ToListAsync();
+            return await Negocio.GetStopStates();
         }
+
+        /* ------------------------------------------------------------------------------------------------------------------------------------------------
+         * NO SE REQUIERE DE ESTOS MÉTODOS YA QUE EN PRINCIPIO NO SE MANEJARÁN LOS ESTADOS DE LAS PARADAS.
+         * SE COMENTA YA QUE EN UN FUTURO SE PODRÍAN REQUERIR.
+         */
+
+        /* ------------------------------------------------------------------------------------------------------------------------------------------------
 
         // GET: api/EstadosParada/5
         [HttpGet("{id}")]
@@ -104,5 +111,7 @@ namespace albartohnosAPI.Controllers
         {
             return _context.EstadoParada.Any(e => e.Id == id);
         }
+
+        ------------------------------------------------------------------------------------------------------------------------------------------------ */
     }
 }

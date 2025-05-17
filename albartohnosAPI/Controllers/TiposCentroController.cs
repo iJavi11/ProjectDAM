@@ -23,10 +23,17 @@ namespace albartohnosAPI.Controllers
 
         // GET: api/TiposCentro
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TipoCentro>>> GetTipoCentro()
+        public async Task<List<TipoCentro>> GetTiposCentro()
         {
-            return await _context.TipoCentro.ToListAsync();
+            return await Negocio.GetStopCenterTypes();
         }
+
+        /* ------------------------------------------------------------------------------------------------------------------------------------------------
+         * NO SE REQUIERE DE ESTOS MÉTODOS YA QUE EN PRINCIPIO NO SE MANEJARÁN LOS TIPOS DE LOS CENTROS.
+         * SE COMENTA YA QUE EN UN FUTURO SE PODRÍAN REQUERIR.
+         */
+
+        /* ------------------------------------------------------------------------------------------------------------------------------------------------
 
         // GET: api/TiposCentro/5
         [HttpGet("{id}")]
@@ -104,5 +111,7 @@ namespace albartohnosAPI.Controllers
         {
             return _context.TipoCentro.Any(e => e.Id == id);
         }
+
+        ------------------------------------------------------------------------------------------------------------------------------------------------ */
     }
 }

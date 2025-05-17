@@ -28,11 +28,11 @@ namespace albartohnosAPI.Controllers
             return await _context.Usuario.ToListAsync();
         }
 
-        // GET: api/Usuarios/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Usuario>> GetUsuario(string id)
+        // GET: api/Usuarios/admin
+        [HttpGet("{login}")]
+        public async Task<ActionResult<Usuario>> GetUsuario(string login)
         {
-            var usuario = await _context.Usuario.FindAsync(id);
+            var usuario = await Negocio.GetUserByLogin(login);
 
             if (usuario == null)
             {
@@ -42,7 +42,7 @@ namespace albartohnosAPI.Controllers
             return usuario;
         }
 
-        // PUT: api/Usuarios/5
+        // PUT: api/Usuarios/admin
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutUsuario(string id, Usuario usuario)

@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace albartohnosAPI.Models;
 
+[Table("Rutas")]
 public partial class Ruta
 {
     [Key]

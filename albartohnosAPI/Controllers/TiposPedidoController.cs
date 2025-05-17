@@ -23,10 +23,17 @@ namespace albartohnosAPI.Controllers
 
         // GET: api/TiposPedido
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TipoPedido>>> GetTipoPedido()
+        public async Task<List<TipoPedido>> GetTipoPedido()
         {
-            return await _context.TipoPedido.ToListAsync();
+            return await Negocio.GetOrderTypes();
         }
+
+        /* ------------------------------------------------------------------------------------------------------------------------------------------------
+         * NO SE REQUIERE DE ESTOS MÉTODOS YA QUE EN PRINCIPIO NO SE MANEJARÁN LOS TIPOS DE LOS PEDIDOS.
+         * SE COMENTA YA QUE EN UN FUTURO SE PODRÍAN REQUERIR.
+         */
+
+        /* ------------------------------------------------------------------------------------------------------------------------------------------------
 
         // GET: api/TiposPedido/5
         [HttpGet("{id}")]
@@ -104,5 +111,7 @@ namespace albartohnosAPI.Controllers
         {
             return _context.TipoPedido.Any(e => e.Id == id);
         }
+
+        ------------------------------------------------------------------------------------------------------------------------------------------------ */
     }
 }

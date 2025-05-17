@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using albartohnosAPI.Data;
 using albartohnosAPI.Models;
+using Serilog;
 
 namespace albartohnosAPI.Controllers
 {
@@ -23,16 +24,16 @@ namespace albartohnosAPI.Controllers
 
         // GET: api/Vehiculos
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Vehiculo>>> GetVehiculo()
+        public async Task<List<Vehiculo>> GetAllVehiculos()
         {
-            return await _context.Vehiculo.ToListAsync();
+            return await Negocio.GetAllVehicles();
         }
 
-        // GET: api/Vehiculos/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Vehiculo>> GetVehiculo(string id)
+        // GET: api/Vehiculos/7744GSN
+        [HttpGet("{matricula}")]
+        public async Task<ActionResult<Vehiculo>> GetVehiculoByMatricula(string matricula)
         {
-            var vehiculo = await _context.Vehiculo.FindAsync(id);
+            var vehiculo = await Negocio.GetVehicleByPlate(matricula);
 
             if (vehiculo == null)
             {
@@ -42,12 +43,12 @@ namespace albartohnosAPI.Controllers
             return vehiculo;
         }
 
-        // PUT: api/Vehiculos/5
+        // PUT: api/Vehiculos/7744GSN
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutVehiculo(string id, Vehiculo vehiculo)
+        [HttpPut("{matricula}")]
+        public async Task<IActionResult> PutVehiculo(string matricula, Vehiculo vehiculo)
         {
-            if (id != vehiculo.Matricula)
+            if (matricula != vehiculo.Matricula)
             {
                 return BadRequest();
             }
@@ -57,15 +58,18 @@ namespace albartohnosAPI.Controllers
             try
             {
                 await _context.SaveChangesAsync();
+                Log.Information($"Vehicle: {vehiculo.Matricula} successfully updated");
             }
-            catch (DbUpdateConcurrencyException)
+            catch (DbUpdateConcurrencyException dbEx)
             {
-                if (!VehiculoExists(id))
+                if (!Negocio.VehicleExists(matricula))
                 {
+                    Log.Warning($"Vehicle -- {vehiculo.Matricula} -- Not Found");
                     return NotFound();
                 }
                 else
                 {
+                    Log.Error($"An error occurred while editing a vehicle: {dbEx.Message}");
                     throw;
                 }
             }
@@ -82,15 +86,18 @@ namespace albartohnosAPI.Controllers
             try
             {
                 await _context.SaveChangesAsync();
+                Log.Information($"Vehicle: {vehiculo.Matricula} successfully created");
             }
-            catch (DbUpdateException)
+            catch (DbUpdateException dbEx)
             {
-                if (VehiculoExists(vehiculo.Matricula))
+                if (Negocio.VehicleExists(vehiculo.Matricula))
                 {
+                    Log.Warning($"Vehicle -- {vehiculo.Matricula} -- already exits");
                     return Conflict();
                 }
                 else
                 {
+                    Log.Error($"An error occurred while editing a vehicle: {dbEx.Message}");
                     throw;
                 }
             }
@@ -98,25 +105,23 @@ namespace albartohnosAPI.Controllers
             return CreatedAtAction("GetVehiculo", new { id = vehiculo.Matricula }, vehiculo);
         }
 
-        // DELETE: api/Vehiculos/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteVehiculo(string id)
+        // DELETE: api/Vehiculos/7744GSN
+        [HttpDelete("{matricula}")]
+        public async Task<IActionResult> DeleteVehiculo(string matricula)
         {
-            var vehiculo = await _context.Vehiculo.FindAsync(id);
+            var vehiculo = await Negocio.GetVehicleByPlate(matricula);
             if (vehiculo == null)
             {
+                Log.Warning($"Vehicle: {matricula} does not exits");
                 return NotFound();
             }
 
             _context.Vehiculo.Remove(vehiculo);
             await _context.SaveChangesAsync();
 
-            return NoContent();
-        }
+            Log.Information($"Vehicle: {vehiculo.Matricula} successfully deleted");
 
-        private bool VehiculoExists(string id)
-        {
-            return _context.Vehiculo.Any(e => e.Matricula == id);
+            return NoContent();
         }
     }
 }
