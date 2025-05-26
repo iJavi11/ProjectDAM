@@ -28,17 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CentrosParadaFRM));
             this.lblTitle = new System.Windows.Forms.Label();
             this.lvStCenters = new System.Windows.Forms.ListView();
+            this.chCodigoInterno = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chNombre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chTipoCentro = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chTLF = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chEmail = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chCCAA = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chLocalidad = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chDireccion = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.cmsStCenter = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.tsmiEditStCenter = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiDeleteStCenter = new System.Windows.Forms.ToolStripMenuItem();
             this.btnCreateStCenter = new System.Windows.Forms.Button();
             this.btnUpdateStCenters = new System.Windows.Forms.Button();
-            this.chTipoCentro = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.cmsStCenter.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -57,6 +64,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lvStCenters.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.chCodigoInterno,
             this.chNombre,
             this.chTipoCentro,
             this.chTLF,
@@ -64,6 +72,7 @@
             this.chCCAA,
             this.chLocalidad,
             this.chDireccion});
+            this.lvStCenters.ContextMenuStrip = this.cmsStCenter;
             this.lvStCenters.FullRowSelect = true;
             this.lvStCenters.GridLines = true;
             this.lvStCenters.HideSelection = false;
@@ -73,11 +82,22 @@
             this.lvStCenters.TabIndex = 11;
             this.lvStCenters.UseCompatibleStateImageBehavior = false;
             this.lvStCenters.View = System.Windows.Forms.View.Details;
+            this.lvStCenters.SelectedIndexChanged += new System.EventHandler(this.lvStCenters_SelectedIndexChanged);
+            // 
+            // chCodigoInterno
+            // 
+            this.chCodigoInterno.Text = "Código Interno";
+            this.chCodigoInterno.Width = 91;
             // 
             // chNombre
             // 
             this.chNombre.Text = "Nombre";
-            this.chNombre.Width = 158;
+            this.chNombre.Width = 139;
+            // 
+            // chTipoCentro
+            // 
+            this.chTipoCentro.Text = "Tipo de Centro";
+            this.chTipoCentro.Width = 86;
             // 
             // chTLF
             // 
@@ -87,22 +107,47 @@
             // chEmail
             // 
             this.chEmail.Text = "Email";
-            this.chEmail.Width = 144;
+            this.chEmail.Width = 142;
             // 
             // chCCAA
             // 
             this.chCCAA.Text = "CCAA";
-            this.chCCAA.Width = 119;
+            this.chCCAA.Width = 89;
             // 
             // chLocalidad
             // 
             this.chLocalidad.Text = "Localidad";
-            this.chLocalidad.Width = 127;
+            this.chLocalidad.Width = 121;
             // 
             // chDireccion
             // 
             this.chDireccion.Text = "Dirección";
-            this.chDireccion.Width = 340;
+            this.chDireccion.Width = 216;
+            // 
+            // cmsStCenter
+            // 
+            this.cmsStCenter.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiEditStCenter,
+            this.tsmiDeleteStCenter});
+            this.cmsStCenter.Name = "cmsMenuWh";
+            this.cmsStCenter.Size = new System.Drawing.Size(118, 48);
+            this.cmsStCenter.Opening += new System.ComponentModel.CancelEventHandler(this.cmsStCenter_Opening);
+            // 
+            // tsmiEditStCenter
+            // 
+            this.tsmiEditStCenter.Image = global::albartohnosDesktop.Properties.Resources.action_Edit_16xMD;
+            this.tsmiEditStCenter.Name = "tsmiEditStCenter";
+            this.tsmiEditStCenter.Size = new System.Drawing.Size(117, 22);
+            this.tsmiEditStCenter.Text = "Editar";
+            this.tsmiEditStCenter.Click += new System.EventHandler(this.tsmiEditStCenter_Click);
+            // 
+            // tsmiDeleteStCenter
+            // 
+            this.tsmiDeleteStCenter.Image = global::albartohnosDesktop.Properties.Resources.action_Cancel_16xMD;
+            this.tsmiDeleteStCenter.Name = "tsmiDeleteStCenter";
+            this.tsmiDeleteStCenter.Size = new System.Drawing.Size(117, 22);
+            this.tsmiDeleteStCenter.Text = "Eliminar";
+            this.tsmiDeleteStCenter.Click += new System.EventHandler(this.tsmiDeleteStCenter_Click);
             // 
             // btnCreateStCenter
             // 
@@ -114,6 +159,7 @@
             this.btnCreateStCenter.TabIndex = 10;
             this.btnCreateStCenter.Text = "Crear Centro de Parada";
             this.btnCreateStCenter.UseVisualStyleBackColor = true;
+            this.btnCreateStCenter.Click += new System.EventHandler(this.btnCreateStCenter_Click);
             // 
             // btnUpdateStCenters
             // 
@@ -127,10 +173,6 @@
             this.btnUpdateStCenters.UseVisualStyleBackColor = true;
             this.btnUpdateStCenters.Click += new System.EventHandler(this.btnUpdateStCenters_Click);
             // 
-            // chTipoCentro
-            // 
-            this.chTipoCentro.Text = "Tipo de Centro";
-            // 
             // CentrosParadaFRM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -142,10 +184,12 @@
             this.Controls.Add(this.btnUpdateStCenters);
             this.Controls.Add(this.lblTitle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "CentrosParadaFRM";
             this.Text = "CentrosParadaFRM";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.CentrosParadaFRM_FormClosed);
+            this.cmsStCenter.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,5 +208,9 @@
         private System.Windows.Forms.Button btnCreateStCenter;
         private System.Windows.Forms.Button btnUpdateStCenters;
         private System.Windows.Forms.ColumnHeader chTipoCentro;
+        private System.Windows.Forms.ContextMenuStrip cmsStCenter;
+        private System.Windows.Forms.ToolStripMenuItem tsmiEditStCenter;
+        private System.Windows.Forms.ToolStripMenuItem tsmiDeleteStCenter;
+        private System.Windows.Forms.ColumnHeader chCodigoInterno;
     }
 }

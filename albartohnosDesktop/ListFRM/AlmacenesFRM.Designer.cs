@@ -28,16 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AlmacenesFRM));
             this.lblTitle = new System.Windows.Forms.Label();
             this.lvWh = new System.Windows.Forms.ListView();
+            this.chCodInterno = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chNombre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chTLF = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chEmail = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chCCAA = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chLocalidad = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chDireccion = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.cmsMenuWh = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.tsmiEditWh = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiWhStock = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiDeleteWh = new System.Windows.Forms.ToolStripMenuItem();
             this.btnCreateWh = new System.Windows.Forms.Button();
             this.btnUpdateWh = new System.Windows.Forms.Button();
+            this.cmsMenuWh.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -56,12 +64,14 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lvWh.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.chCodInterno,
             this.chNombre,
             this.chTLF,
             this.chEmail,
             this.chCCAA,
             this.chLocalidad,
             this.chDireccion});
+            this.lvWh.ContextMenuStrip = this.cmsMenuWh;
             this.lvWh.FullRowSelect = true;
             this.lvWh.GridLines = true;
             this.lvWh.HideSelection = false;
@@ -71,11 +81,17 @@
             this.lvWh.TabIndex = 8;
             this.lvWh.UseCompatibleStateImageBehavior = false;
             this.lvWh.View = System.Windows.Forms.View.Details;
+            this.lvWh.SelectedIndexChanged += new System.EventHandler(this.lvWh_SelectedIndexChanged);
+            // 
+            // chCodInterno
+            // 
+            this.chCodInterno.Text = "Código Interno";
+            this.chCodInterno.Width = 95;
             // 
             // chNombre
             // 
             this.chNombre.Text = "Nombre";
-            this.chNombre.Width = 104;
+            this.chNombre.Width = 111;
             // 
             // chTLF
             // 
@@ -102,6 +118,40 @@
             this.chDireccion.Text = "Dirección";
             this.chDireccion.Width = 217;
             // 
+            // cmsMenuWh
+            // 
+            this.cmsMenuWh.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiEditWh,
+            this.tsmiWhStock,
+            this.tsmiDeleteWh});
+            this.cmsMenuWh.Name = "cmsMenuWh";
+            this.cmsMenuWh.Size = new System.Drawing.Size(123, 70);
+            this.cmsMenuWh.Opening += new System.ComponentModel.CancelEventHandler(this.cmsMenuWh_Opening);
+            // 
+            // tsmiEditWh
+            // 
+            this.tsmiEditWh.Image = global::albartohnosDesktop.Properties.Resources.action_Edit_16xMD;
+            this.tsmiEditWh.Name = "tsmiEditWh";
+            this.tsmiEditWh.Size = new System.Drawing.Size(122, 22);
+            this.tsmiEditWh.Text = "Editar";
+            this.tsmiEditWh.Click += new System.EventHandler(this.tsmiEditWh_Click);
+            // 
+            // tsmiWhStock
+            // 
+            this.tsmiWhStock.Image = global::albartohnosDesktop.Properties.Resources.procedure_16xMD;
+            this.tsmiWhStock.Name = "tsmiWhStock";
+            this.tsmiWhStock.Size = new System.Drawing.Size(122, 22);
+            this.tsmiWhStock.Text = "Ver Stock";
+            this.tsmiWhStock.Click += new System.EventHandler(this.tsmiWhStock_Click);
+            // 
+            // tsmiDeleteWh
+            // 
+            this.tsmiDeleteWh.Image = global::albartohnosDesktop.Properties.Resources.action_Cancel_16xMD;
+            this.tsmiDeleteWh.Name = "tsmiDeleteWh";
+            this.tsmiDeleteWh.Size = new System.Drawing.Size(122, 22);
+            this.tsmiDeleteWh.Text = "Eliminar";
+            this.tsmiDeleteWh.Click += new System.EventHandler(this.tsmiDeleteWh_Click);
+            // 
             // btnCreateWh
             // 
             this.btnCreateWh.Image = global::albartohnosDesktop.Properties.Resources.action_add_16xMD;
@@ -112,6 +162,7 @@
             this.btnCreateWh.TabIndex = 7;
             this.btnCreateWh.Text = "Crear Almacén";
             this.btnCreateWh.UseVisualStyleBackColor = true;
+            this.btnCreateWh.Click += new System.EventHandler(this.btnCreateWh_Click);
             // 
             // btnUpdateWh
             // 
@@ -136,10 +187,12 @@
             this.Controls.Add(this.btnUpdateWh);
             this.Controls.Add(this.lblTitle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "AlmacenesFRM";
             this.Text = "AlmacenesFRM";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AlmacenesFRM_FormClosed);
+            this.cmsMenuWh.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -157,5 +210,10 @@
         private System.Windows.Forms.ColumnHeader chCCAA;
         private System.Windows.Forms.ColumnHeader chLocalidad;
         private System.Windows.Forms.ColumnHeader chDireccion;
+        private System.Windows.Forms.ContextMenuStrip cmsMenuWh;
+        private System.Windows.Forms.ToolStripMenuItem tsmiEditWh;
+        private System.Windows.Forms.ToolStripMenuItem tsmiWhStock;
+        private System.Windows.Forms.ToolStripMenuItem tsmiDeleteWh;
+        private System.Windows.Forms.ColumnHeader chCodInterno;
     }
 }

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VehiculosFRM));
             this.lvVehicles = new System.Windows.Forms.ListView();
             this.chMatricula = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chMarca = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -40,12 +41,12 @@
             this.chFBaja = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cmsMenuVehicle = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tsmiEditarVehiculo = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiActivarVehiculo = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiDesactivarVehiculo = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiEliminarVehiculo = new System.Windows.Forms.ToolStripMenuItem();
             this.lblTitle = new System.Windows.Forms.Label();
             this.btnUpdateVehicles = new System.Windows.Forms.Button();
             this.btnCreateVehicle = new System.Windows.Forms.Button();
-            this.tsmiActivarVehiculo = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmiDesactivarVehiculo = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsMenuVehicle.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,6 +74,7 @@
             this.lvVehicles.TabIndex = 0;
             this.lvVehicles.UseCompatibleStateImageBehavior = false;
             this.lvVehicles.View = System.Windows.Forms.View.Details;
+            this.lvVehicles.SelectedIndexChanged += new System.EventHandler(this.lvVehicles_SelectedIndexChanged);
             // 
             // chMatricula
             // 
@@ -122,22 +124,38 @@
             this.tsmiDesactivarVehiculo,
             this.tsmiEliminarVehiculo});
             this.cmsMenuVehicle.Name = "cmsMenuVehicle";
-            this.cmsMenuVehicle.Size = new System.Drawing.Size(181, 114);
+            this.cmsMenuVehicle.Size = new System.Drawing.Size(129, 92);
             this.cmsMenuVehicle.Opening += new System.ComponentModel.CancelEventHandler(this.cmsMenuVehicle_Opening);
             // 
             // tsmiEditarVehiculo
             // 
             this.tsmiEditarVehiculo.Image = global::albartohnosDesktop.Properties.Resources.action_Edit_16xMD;
             this.tsmiEditarVehiculo.Name = "tsmiEditarVehiculo";
-            this.tsmiEditarVehiculo.Size = new System.Drawing.Size(180, 22);
+            this.tsmiEditarVehiculo.Size = new System.Drawing.Size(128, 22);
             this.tsmiEditarVehiculo.Text = "Editar";
             this.tsmiEditarVehiculo.Click += new System.EventHandler(this.tsmiEditarVehiculo_Click);
+            // 
+            // tsmiActivarVehiculo
+            // 
+            this.tsmiActivarVehiculo.Image = global::albartohnosDesktop.Properties.Resources.CheckBox_669;
+            this.tsmiActivarVehiculo.Name = "tsmiActivarVehiculo";
+            this.tsmiActivarVehiculo.Size = new System.Drawing.Size(128, 22);
+            this.tsmiActivarVehiculo.Text = "Activar";
+            this.tsmiActivarVehiculo.Click += new System.EventHandler(this.tsmiActivarVehiculo_Click);
+            // 
+            // tsmiDesactivarVehiculo
+            // 
+            this.tsmiDesactivarVehiculo.Image = global::albartohnosDesktop.Properties.Resources.CheckBox_669;
+            this.tsmiDesactivarVehiculo.Name = "tsmiDesactivarVehiculo";
+            this.tsmiDesactivarVehiculo.Size = new System.Drawing.Size(128, 22);
+            this.tsmiDesactivarVehiculo.Text = "Desactivar";
+            this.tsmiDesactivarVehiculo.Click += new System.EventHandler(this.tsmiDesactivarVehiculo_Click);
             // 
             // tsmiEliminarVehiculo
             // 
             this.tsmiEliminarVehiculo.Image = global::albartohnosDesktop.Properties.Resources.action_Cancel_16xMD;
             this.tsmiEliminarVehiculo.Name = "tsmiEliminarVehiculo";
-            this.tsmiEliminarVehiculo.Size = new System.Drawing.Size(180, 22);
+            this.tsmiEliminarVehiculo.Size = new System.Drawing.Size(128, 22);
             this.tsmiEliminarVehiculo.Text = "Eliminar";
             this.tsmiEliminarVehiculo.Click += new System.EventHandler(this.tsmiEliminarVehiculo_Click);
             // 
@@ -175,22 +193,6 @@
             this.btnCreateVehicle.UseVisualStyleBackColor = true;
             this.btnCreateVehicle.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnCreateVehicle_MouseClick);
             // 
-            // tsmiActivarVehiculo
-            // 
-            this.tsmiActivarVehiculo.Image = global::albartohnosDesktop.Properties.Resources.CheckBox_669;
-            this.tsmiActivarVehiculo.Name = "tsmiActivarVehiculo";
-            this.tsmiActivarVehiculo.Size = new System.Drawing.Size(180, 22);
-            this.tsmiActivarVehiculo.Text = "Activar";
-            this.tsmiActivarVehiculo.Click += new System.EventHandler(this.tsmiActivarVehiculo_Click);
-            // 
-            // tsmiDesactivarVehiculo
-            // 
-            this.tsmiDesactivarVehiculo.Image = global::albartohnosDesktop.Properties.Resources.CheckBox_669;
-            this.tsmiDesactivarVehiculo.Name = "tsmiDesactivarVehiculo";
-            this.tsmiDesactivarVehiculo.Size = new System.Drawing.Size(180, 22);
-            this.tsmiDesactivarVehiculo.Text = "Desactivar";
-            this.tsmiDesactivarVehiculo.Click += new System.EventHandler(this.tsmiDesactivarVehiculo_Click);
-            // 
             // VehiculosFRM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -202,6 +204,7 @@
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.lvVehicles);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "VehiculosFRM";
             this.Text = "VehiculosFRM";

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainFRM));
             this.msMainMenu = new System.Windows.Forms.MenuStrip();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiLogOut = new System.Windows.Forms.ToolStripMenuItem();
@@ -42,7 +43,9 @@
             this.btnStCentersModule = new System.Windows.Forms.Button();
             this.lblDate = new System.Windows.Forms.Label();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.msMainMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // msMainMenu
@@ -100,6 +103,7 @@
             this.btnUsersModule.TabIndex = 3;
             this.btnUsersModule.Text = "Usuarios";
             this.btnUsersModule.UseVisualStyleBackColor = true;
+            this.btnUsersModule.Click += new System.EventHandler(this.btnUsersModule_Click);
             // 
             // btnVehiclesModule
             // 
@@ -119,6 +123,7 @@
             this.btnProductsModule.TabIndex = 6;
             this.btnProductsModule.Text = "Productos";
             this.btnProductsModule.UseVisualStyleBackColor = true;
+            this.btnProductsModule.Click += new System.EventHandler(this.btnProductsModule_Click);
             // 
             // btnWhModule
             // 
@@ -138,6 +143,7 @@
             this.btnRoutesModule.TabIndex = 8;
             this.btnRoutesModule.Text = "Rutas";
             this.btnRoutesModule.UseVisualStyleBackColor = true;
+            this.btnRoutesModule.Click += new System.EventHandler(this.btnRoutesModule_Click);
             // 
             // btnStCentersModule
             // 
@@ -159,12 +165,23 @@
             this.lblDate.TabIndex = 10;
             this.lblDate.Text = "Estamos a día -";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::albartohnosDesktop.Properties.Resources.logo;
+            this.pictureBox1.Location = new System.Drawing.Point(628, 14);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(152, 149);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            // 
             // MainFRM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(815, 318);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblDate);
             this.Controls.Add(this.btnStCentersModule);
             this.Controls.Add(this.btnRoutesModule);
@@ -175,6 +192,7 @@
             this.Controls.Add(this.lblModuleQ);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.msMainMenu);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.msMainMenu;
             this.MaximizeBox = false;
             this.Name = "MainFRM";
@@ -182,6 +200,7 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainFRM_FormClosed);
             this.msMainMenu.ResumeLayout(false);
             this.msMainMenu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -202,5 +221,6 @@
         private System.Windows.Forms.Button btnStCentersModule;
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.ToolTip toolTip;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VehiculoFRM));
             this.lblMatricula = new System.Windows.Forms.Label();
             this.txtMatricula = new System.Windows.Forms.TextBox();
             this.txtCapacidad = new System.Windows.Forms.TextBox();
@@ -238,7 +239,8 @@
             this.Controls.Add(this.lblCapacidad);
             this.Controls.Add(this.txtMatricula);
             this.Controls.Add(this.lblMatricula);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "VehiculoFRM";
             this.Text = "VehiculoFRM";
             this.ResumeLayout(false);

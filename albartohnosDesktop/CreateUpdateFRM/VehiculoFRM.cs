@@ -53,6 +53,7 @@ namespace albartohnosDesktop.CreateUpdateFRM
             }
             else
             {
+                lblTitle.Text = "Crear Vehículo";
                 // Validación básica para mostrar o no la Fecha de Baja
                 if (chkActivo.Checked)
                 {

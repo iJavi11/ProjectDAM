@@ -59,12 +59,6 @@ namespace albartohnosDesktop.ListFRM
                 lvVehicles.Items.Add(item);
             }
         }
-        private void cmsMenuVehicle_Opening(object sender, CancelEventArgs e)
-        {
-            Vehiculo vehiculo = (Vehiculo)lvVehicles.SelectedItems[0].Tag;
-            tsmiDesactivarVehiculo.Visible = vehiculo.Activo == 1;
-            tsmiActivarVehiculo.Visible = vehiculo.Activo == 0;
-        }
         private void btnUpdateVehicles_MouseClick(object sender, MouseEventArgs e)
         {
             ReloadVehicleList();
@@ -127,6 +121,39 @@ namespace albartohnosDesktop.ListFRM
         private void VehiculosFRM_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Close();
+        }
+
+        // FUNCIONALIDADES
+        private void cmsMenuVehicle_Opening(object sender, CancelEventArgs e)
+        {
+            if (lvVehicles.SelectedItems.Count == 0)
+            {
+                e.Cancel = true;
+                return;
+            }
+            else
+            {
+                Vehiculo vehiculo = (Vehiculo)lvVehicles.SelectedItems[0].Tag;
+                tsmiDesactivarVehiculo.Visible = vehiculo.Activo == 1;
+                tsmiActivarVehiculo.Visible = vehiculo.Activo == 0;
+            }
+        }
+        private void lvVehicles_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (lvVehicles.SelectedItems.Count != 0)
+            {
+                tsmiEditarVehiculo.Enabled = true;
+                tsmiActivarVehiculo.Enabled = true;
+                tsmiDesactivarVehiculo.Enabled = true;
+                tsmiEliminarVehiculo.Enabled = true;
+            }
+            else
+            {
+                tsmiEditarVehiculo.Enabled = false;
+                tsmiActivarVehiculo.Enabled = false;
+                tsmiDesactivarVehiculo.Enabled = false;
+                tsmiEliminarVehiculo.Enabled = false;
+            }
         }
     }
 }

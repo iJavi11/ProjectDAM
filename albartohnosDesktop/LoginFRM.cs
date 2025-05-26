@@ -44,7 +44,13 @@ namespace albartohnosDesktop
             {
                 if (response != "Successfully authenticated")
                 {
-                    MessageBox.Show(response);
+                    // MessageBox.Show(response);
+                    MessageBox.Show(
+                        "El usuario contraseña es incorrecto", 
+                        "Error",
+                        MessageBoxButtons.OK, 
+                        MessageBoxIcon.Error
+                    );
                     return;
                 }
 

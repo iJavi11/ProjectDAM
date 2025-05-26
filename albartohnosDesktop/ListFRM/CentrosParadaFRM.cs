@@ -1,4 +1,5 @@
-﻿using albartohnosDesktop.Models;
+﻿using albartohnosDesktop.CreateUpdateFRM;
+using albartohnosDesktop.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -42,7 +43,8 @@ namespace albartohnosDesktop.ListFRM
             {
                 if (centroParada.TipoCentro != 1)
                 {
-                    ListViewItem item = new ListViewItem(centroParada.Nombre);
+                    ListViewItem item = new ListViewItem(centroParada.Id);
+                    item.SubItems.Add(centroParada.Nombre);
                     item.SubItems.Add(tiposCentro.FirstOrDefault(tc => tc.Id == centroParada.TipoCentro)?.Nombre ?? "-");
                     item.SubItems.Add(centroParada.Tlf);
                     item.SubItems.Add(centroParada.Email);
@@ -60,9 +62,67 @@ namespace albartohnosDesktop.ListFRM
         {
             ReloadStopCenterList();
         }
+        private async void btnCreateStCenter_Click(object sender, EventArgs e)
+        {
+            CentroParada centroParada = new CentroParada();
+            CentroParadaFRM ventana = new CentroParadaFRM(centroParada, tiposCentro, false);
+            if (ventana.ShowDialog() == DialogResult.OK)
+            {
+                await Negocio.CrearCentroParada(centroParada);
+                this.ReloadStopCenterList();
+            }
+        }
+        private async void tsmiEditStCenter_Click(object sender, EventArgs e)
+        {
+            CentroParada centroParada = (CentroParada)lvStCenters.SelectedItems[0].Tag;
+            CentroParadaFRM ventana = new CentroParadaFRM(centroParada, tiposCentro, false);
+            if (ventana.ShowDialog() == DialogResult.OK)
+            {
+                await Negocio.EditarCentroParada(centroParada);
+                this.ReloadStopCenterList();
+            }
+        }
+        private async void tsmiDeleteStCenter_Click(object sender, EventArgs e)
+        {
+            CentroParada centroParada = (CentroParada)lvStCenters.SelectedItems[0].Tag;
+            if (MessageBox.Show(
+                    $"¿Está seguro de que desea eliminar el almacén?\n" +
+                    $"Ten en cuenta que solo se puede eliminar almacenes que no están vinculados a ninguna ruta y no poseen stock.",
+                    "Confirmar eliminación",
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Warning
+                ) == DialogResult.Yes
+            )
+            {
+                await Negocio.BorrarCentroParada(centroParada.Id);
+                this.ReloadStopCenterList();
+            }
+        }
         private void CentrosParadaFRM_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Close();
+        }
+
+        // FUNCIONALIDADES
+        private void cmsStCenter_Opening(object sender, CancelEventArgs e)
+        {
+            if (lvStCenters.SelectedItems.Count == 0)
+            {
+                e.Cancel = true;
+                return;
+            }
+        }
+        private void lvStCenters_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (lvStCenters.SelectedItems.Count != 0)
+            {
+                tsmiEditStCenter.Enabled = true;
+                tsmiDeleteStCenter.Enabled = true;
+            }
+            else
+            {
+                tsmiEditStCenter.Enabled = false;
+                tsmiDeleteStCenter.Enabled = false;
+            }
         }
     }
 }

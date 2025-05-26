@@ -50,6 +50,7 @@ namespace albartohnosDesktop
         }
         private async void ObtenerCache()
         {
+            perfiles = await Negocio.ObtenerPerfiles();
             estadosRuta = await Negocio.ObtenerEstadosRuta();
             estadosParada = await Negocio.ObtenerEstadosParada();
             estadosPedido = await Negocio.ObtenerEstadosPedido();
@@ -69,6 +70,14 @@ namespace albartohnosDesktop
             // Cerrar el formulario actual
             this.Close();
         }
+        private void btnUsersModule_Click(object sender, EventArgs e)
+        {
+            // Crear una instancia del formulario VehiculosFRM
+            var usuariosForm = new ListFRM.UsuariosFRM(currentUser, perfiles);
+
+            // Mostrar el formulario como una ventana modal
+            usuariosForm.ShowDialog();
+        }
         private void btnVehiclesModule_Click(object sender, EventArgs e)
         {
             // Crear una instancia del formulario VehiculosFRM
@@ -80,10 +89,26 @@ namespace albartohnosDesktop
         private void btnWhModule_Click(object sender, EventArgs e)
         {
             // Crear una instancia del formulario AlmacenesFRM
-            var almacenesForm = new ListFRM.AlmacenesFRM(currentUser);
+            var almacenesForm = new ListFRM.AlmacenesFRM(currentUser, tiposCentro);
 
             // Mostrar el formulario como una ventana modal
             almacenesForm.ShowDialog();
+        }
+        private void btnProductsModule_Click(object sender, EventArgs e)
+        {
+            // Crear una instancia del formulario ProductosFRM
+            var productosForm = new ListFRM.ProductosFRM(currentUser);
+
+            // Mostrar el formulario como una ventana modal
+            productosForm.ShowDialog();
+        }
+        private void btnRoutesModule_Click(object sender, EventArgs e)
+        {
+            // Crear una instancia del formulario VehiculosFRM
+            var rutasForm = new ListFRM.RutasFRM(currentUser, estadosRuta, estadosParada, estadosPedido, tiposPedido);
+
+            // Mostrar el formulario como una ventana modal
+            rutasForm.ShowDialog();
         }
         private void btnStCentersModule_Click(object sender, EventArgs e)
         {

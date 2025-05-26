@@ -78,6 +78,54 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CreateUpdateFRM\CentroParadaFRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateUpdateFRM\CentroParadaFRM.Designer.cs">
+      <DependentUpon>CentroParadaFRM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateUpdateFRM\InventarioFRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateUpdateFRM\InventarioFRM.Designer.cs">
+      <DependentUpon>InventarioFRM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateUpdateFRM\ParadaFRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateUpdateFRM\ParadaFRM.Designer.cs">
+      <DependentUpon>ParadaFRM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateUpdateFRM\PedidoFRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateUpdateFRM\PedidoFRM.Designer.cs">
+      <DependentUpon>PedidoFRM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateUpdateFRM\ProductoFRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateUpdateFRM\ProductoFRM.Designer.cs">
+      <DependentUpon>ProductoFRM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateUpdateFRM\RutaFRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateUpdateFRM\RutaFRM.Designer.cs">
+      <DependentUpon>RutaFRM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateUpdateFRM\UsuarioFRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateUpdateFRM\UsuarioFRM.Designer.cs">
+      <DependentUpon>UsuarioFRM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateUpdateFRM\UsuarioPasswdFRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateUpdateFRM\UsuarioPasswdFRM.Designer.cs">
+      <DependentUpon>UsuarioPasswdFRM.cs</DependentUpon>
+    </Compile>
     <Compile Include="CreateUpdateFRM\VehiculoFRM.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +144,42 @@
     <Compile Include="ListFRM\CentrosParadaFRM.Designer.cs">
       <DependentUpon>CentrosParadaFRM.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListFRM\ParadasFRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListFRM\ParadasFRM.Designer.cs">
+      <DependentUpon>ParadasFRM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListFRM\PedidosFRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListFRM\PedidosFRM.Designer.cs">
+      <DependentUpon>PedidosFRM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListFRM\ProductosFRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListFRM\ProductosFRM.Designer.cs">
+      <DependentUpon>ProductosFRM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListFRM\RutasFRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListFRM\RutasFRM.Designer.cs">
+      <DependentUpon>RutasFRM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListFRM\StockFRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListFRM\StockFRM.Designer.cs">
+      <DependentUpon>StockFRM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListFRM\UsuariosFRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListFRM\UsuariosFRM.Designer.cs">
+      <DependentUpon>UsuariosFRM.cs</DependentUpon>
+    </Compile>
     <Compile Include="ListFRM\VehiculosFRM.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,7 +197,12 @@
     <Compile Include="Models\EstadoParada.cs" />
     <Compile Include="Models\EstadoPedido.cs" />
     <Compile Include="Models\EstadoRuta.cs" />
+    <Compile Include="Models\Parada.cs" />
+    <Compile Include="Models\Pedido.cs" />
     <Compile Include="Models\Perfil.cs" />
+    <Compile Include="Models\Producto.cs" />
+    <Compile Include="Models\Ruta.cs" />
+    <Compile Include="Models\Stock.cs" />
     <Compile Include="Models\TipoCentro.cs" />
     <Compile Include="Models\TipoPedido.cs" />
     <Compile Include="Models\Usuario.cs" />
@@ -127,6 +216,30 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CreateUpdateFRM\CentroParadaFRM.resx">
+      <DependentUpon>CentroParadaFRM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateUpdateFRM\InventarioFRM.resx">
+      <DependentUpon>InventarioFRM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateUpdateFRM\ParadaFRM.resx">
+      <DependentUpon>ParadaFRM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateUpdateFRM\PedidoFRM.resx">
+      <DependentUpon>PedidoFRM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateUpdateFRM\ProductoFRM.resx">
+      <DependentUpon>ProductoFRM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateUpdateFRM\RutaFRM.resx">
+      <DependentUpon>RutaFRM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateUpdateFRM\UsuarioFRM.resx">
+      <DependentUpon>UsuarioFRM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateUpdateFRM\UsuarioPasswdFRM.resx">
+      <DependentUpon>UsuarioPasswdFRM.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CreateUpdateFRM\VehiculoFRM.resx">
       <DependentUpon>VehiculoFRM.cs</DependentUpon>
     </EmbeddedResource>
@@ -135,6 +248,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ListFRM\CentrosParadaFRM.resx">
       <DependentUpon>CentrosParadaFRM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListFRM\ParadasFRM.resx">
+      <DependentUpon>ParadasFRM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListFRM\PedidosFRM.resx">
+      <DependentUpon>PedidosFRM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListFRM\ProductosFRM.resx">
+      <DependentUpon>ProductosFRM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListFRM\RutasFRM.resx">
+      <DependentUpon>RutasFRM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListFRM\StockFRM.resx">
+      <DependentUpon>StockFRM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListFRM\UsuariosFRM.resx">
+      <DependentUpon>UsuariosFRM.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListFRM\VehiculosFRM.resx">
       <DependentUpon>VehiculosFRM.cs</DependentUpon>
@@ -169,9 +300,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Requests\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Icons\action_add_16xMD.png" />
   </ItemGroup>
@@ -210,6 +339,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Icons\action_Edit_16xMD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
