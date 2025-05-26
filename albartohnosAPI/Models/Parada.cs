@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace albartohnosAPI.Models;
 
+[Table("Paradas")]
 public partial class Parada
 {
     [Key]
@@ -20,11 +21,11 @@ public partial class Parada
 
     public DateTime? FechaPrev { get; set; }
 
-    public virtual CentroParada CentroParadaNavigation { get; set; } = null!;
+    public virtual CentroParada? CentroParadaNavigation { get; set; }
 
-    public virtual EstadoParada EstadoNavigation { get; set; } = null!;
+    public virtual EstadoParada? EstadoNavigation { get; set; }
 
     public virtual ICollection<Pedido> Pedidos { get; set; } = new List<Pedido>();
 
-    public virtual Ruta RutaNavigation { get; set; } = null!;
+    public virtual Ruta? RutaNavigation { get; set; }
 }

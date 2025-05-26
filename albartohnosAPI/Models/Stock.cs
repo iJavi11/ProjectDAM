@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace albartohnosAPI.Models;
 
+[Table("Stock")]
 [PrimaryKey(nameof(IdAlmacen), nameof(SkuProducto))]
 public partial class Stock
 {
@@ -17,7 +18,7 @@ public partial class Stock
 
     public int Cantidad { get; set; }
 
-    public virtual CentroParada IdAlmacenNavigation { get; set; } = null!;
+    public virtual CentroParada? IdAlmacenNavigation { get; set; }
 
-    public virtual Producto SkuProductoNavigation { get; set; } = null!;
+    public virtual Producto? SkuProductoNavigation { get; set; }
 }

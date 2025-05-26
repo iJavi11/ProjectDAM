@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace albartohnosAPI.Models;
 
+[Table("Pedidos")]
 public partial class Pedido
 {
     [Key]
@@ -22,11 +23,11 @@ public partial class Pedido
     [ForeignKey(nameof(IdParadaNavigation))]
     public int? IdParada { get; set; }
 
-    public virtual EstadoPedido EstadoNavigation { get; set; } = null!;
+    public virtual EstadoPedido? EstadoNavigation { get; set; }
 
     public virtual Parada? IdParadaNavigation { get; set; }
 
-    public virtual Producto SkuProductoNavigation { get; set; } = null!;
+    public virtual Producto? SkuProductoNavigation { get; set; }
 
-    public virtual TipoPedido TipoNavigation { get; set; } = null!;
+    public virtual TipoPedido? TipoNavigation { get; set; }
 }

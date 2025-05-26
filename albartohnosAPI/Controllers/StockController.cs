@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using albartohnosAPI.Data;
 using albartohnosAPI.Models;
+using Serilog;
 
 namespace albartohnosAPI.Controllers
 {
@@ -23,31 +24,32 @@ namespace albartohnosAPI.Controllers
 
         // GET: api/Stock
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Stock>>> GetStock()
+        public async Task<List<Stock>> GetStock()
         {
-            return await _context.Stock.ToListAsync();
+            // return await _context.Stock.ToListAsync();
+            return await Negocio.GetAllStock();
         }
 
-        // GET: api/Stock/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Stock>> GetStock(string id)
+        // GET: api/Stock/Producto/PEL-001
+        [HttpGet("Producto/{skuProducto}")]
+        public async Task<List<Stock>> GetStockByProducto(string skuProducto)
         {
-            var stock = await _context.Stock.FindAsync(id);
-
-            if (stock == null)
-            {
-                return NotFound();
-            }
-
-            return stock;
+            return await Negocio.GetAllStockByProduct(skuProducto);
         }
 
-        // PUT: api/Stock/5
+        // GET: api/Stock/Almacen/1
+        [HttpGet("Almacen/{idAlmacen}")]
+        public async Task<List<Stock>> GetStockByAlmacen(string idAlmacen)
+        {
+            return await Negocio.GetAllStockByWarehouse(idAlmacen);
+        }
+
+        // PUT: api/Stock/1/PEL-001
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutStock(string id, Stock stock)
+        [HttpPut("{idAlmacen}/{skuProducto}")]
+        public async Task<IActionResult> PutStock(string idAlmacen, string skuProducto, Stock stock)
         {
-            if (id != stock.IdAlmacen)
+            if (idAlmacen != stock.IdAlmacen || skuProducto != stock.SkuProducto)
             {
                 return BadRequest();
             }
@@ -57,15 +59,18 @@ namespace albartohnosAPI.Controllers
             try
             {
                 await _context.SaveChangesAsync();
+                Log.Information($"Stock successfully updated");
             }
-            catch (DbUpdateConcurrencyException)
+            catch (DbUpdateConcurrencyException dbEx)
             {
-                if (!StockExists(id))
+                if (!Negocio.StockExists(idAlmacen, skuProducto))
                 {
+                    Log.Warning($"Stock Not Found");
                     return NotFound();
                 }
                 else
                 {
+                    Log.Error($"An error occurred while editing the Stock: {dbEx.Message}");
                     throw;
                 }
             }
@@ -82,41 +87,50 @@ namespace albartohnosAPI.Controllers
             try
             {
                 await _context.SaveChangesAsync();
+                Log.Information($"Stock successfully created");
             }
-            catch (DbUpdateException)
+            catch (DbUpdateException dbEx)
             {
-                if (StockExists(stock.IdAlmacen))
+                if (Negocio.StockExists(stock.IdAlmacen, stock.SkuProducto))
                 {
+                    Log.Warning($"Stock already exists");
                     return Conflict();
                 }
                 else
                 {
+                    Log.Error($"An error occurred while creating the Stock: {dbEx.Message}");
                     throw;
                 }
             }
 
-            return CreatedAtAction("GetStock", new { id = stock.IdAlmacen }, stock);
+            return CreatedAtAction(
+                "GetStock", 
+                new { idAlmacen = stock.IdAlmacen, skuProducto = stock.SkuProducto }, 
+                stock
+            );
         }
 
-        // DELETE: api/Stock/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteStock(string id)
+        // DELETE: api/Stock/1/PEL-001
+        [HttpDelete("{idAlmacen}/{skuProducto}")]
+        public async Task<IActionResult> DeleteStock(string idAlmacen, string skuProducto)
         {
-            var stock = await _context.Stock.FindAsync(id);
+            var stock = await _context.Stock
+                .FirstOrDefaultAsync(s => 
+                    s.IdAlmacen == idAlmacen && s.SkuProducto == skuProducto
+                );
+
             if (stock == null)
             {
+                Log.Warning($"Stockdoes not exists");
                 return NotFound();
             }
 
             _context.Stock.Remove(stock);
             await _context.SaveChangesAsync();
 
-            return NoContent();
-        }
+            Log.Information($"Stock successfully deleted");
 
-        private bool StockExists(string id)
-        {
-            return _context.Stock.Any(e => e.IdAlmacen == id);
+            return NoContent();
         }
     }
 }

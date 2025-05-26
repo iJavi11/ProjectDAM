@@ -25,7 +25,7 @@ public partial class Ruta
 
     public virtual Usuario? ConductorNavigation { get; set; }
 
-    public virtual EstadoRuta EstadoNavigation { get; set; } = null!;
+    public virtual EstadoRuta? EstadoNavigation { get; set; }
 
     public virtual ICollection<HistoricoRuta> Historicoruta { get; set; } = new List<HistoricoRuta>();
 

@@ -109,7 +109,7 @@ namespace albartohnosAPI.Controllers
                 }
             }
 
-            return CreatedAtAction("GetCentroParada", new { id = centroParada.Id }, centroParada);
+            return CreatedAtAction("GetCentroParadaById", new { id = centroParada.Id }, centroParada);
         }
 
         // DELETE: api/CentrosParada/5

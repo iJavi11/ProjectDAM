@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using albartohnosAPI.Data;
 using albartohnosAPI.Models;
+using Serilog;
 
 namespace albartohnosAPI.Controllers
 {
@@ -23,16 +24,16 @@ namespace albartohnosAPI.Controllers
 
         // GET: api/Paradas
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Parada>>> GetParada()
+        public async Task<List<Parada>> GetAllParadas()
         {
-            return await _context.Parada.ToListAsync();
+            return await Negocio.GetAllStops();
         }
 
         // GET: api/Paradas/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Parada>> GetParada(int id)
+        public async Task<ActionResult<Parada>> GetParadaById(int id)
         {
-            var parada = await _context.Parada.FindAsync(id);
+            var parada = await Negocio.GetStopById(id);
 
             if (parada == null)
             {
@@ -40,6 +41,20 @@ namespace albartohnosAPI.Controllers
             }
 
             return parada;
+        }
+
+        // GET: api/Paradas/Ruta/RUTA-001
+        [HttpGet("Ruta/{codRuta}")]
+        public async Task<ActionResult<List<Parada>>> GetParadasByRuta(string codRuta)
+        {
+            var paradas = await Negocio.GetStopsByRoute(codRuta);
+
+            if (paradas == null)
+            {
+                return NotFound();
+            }
+
+            return paradas;
         }
 
         // PUT: api/Paradas/5
@@ -57,15 +72,18 @@ namespace albartohnosAPI.Controllers
             try
             {
                 await _context.SaveChangesAsync();
+                Log.Information($"Stop: {parada.Id} successfully updated");
             }
-            catch (DbUpdateConcurrencyException)
+            catch (DbUpdateConcurrencyException dbEx)
             {
-                if (!ParadaExists(id))
+                if (!Negocio.StopExists(id))
                 {
+                    Log.Warning($"Stop -- {parada.Id} -- Not Found");
                     return NotFound();
                 }
                 else
                 {
+                    Log.Error($"An error occurred while editing a stop: {dbEx.Message}");
                     throw;
                 }
             }
@@ -79,9 +97,26 @@ namespace albartohnosAPI.Controllers
         public async Task<ActionResult<Parada>> PostParada(Parada parada)
         {
             _context.Parada.Add(parada);
-            await _context.SaveChangesAsync();
+            try
+            {
+                await _context.SaveChangesAsync();
+                Log.Information($"Stop: {parada.Id} successfully created");
+            }
+            catch (DbUpdateException dbEx)
+            {
+                if (Negocio.StopExists(parada.Id))
+                {
+                    Log.Warning($"Stop -- {parada.Id} -- already exists");
+                    return Conflict();
+                }
+                else
+                {
+                    Log.Error($"An error occurred while creating a stop: {dbEx.Message}");
+                    throw;
+                }
+            }
 
-            return CreatedAtAction("GetParada", new { id = parada.Id }, parada);
+            return CreatedAtAction("GetParadaById", new { id = parada.Id }, parada);
         }
 
         // DELETE: api/Paradas/5
@@ -91,18 +126,16 @@ namespace albartohnosAPI.Controllers
             var parada = await _context.Parada.FindAsync(id);
             if (parada == null)
             {
+                Log.Warning($"Stop: {id} does not exists");
                 return NotFound();
             }
 
             _context.Parada.Remove(parada);
             await _context.SaveChangesAsync();
 
-            return NoContent();
-        }
+            Log.Information($"Stop: {parada.Id} successfully deleted");
 
-        private bool ParadaExists(int id)
-        {
-            return _context.Parada.Any(e => e.Id == id);
+            return NoContent();
         }
     }
 }

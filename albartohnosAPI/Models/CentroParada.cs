@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace albartohnosAPI.Models;
 
@@ -30,5 +31,5 @@ public partial class CentroParada
 
     public virtual ICollection<Stock> Stocks { get; set; } = new List<Stock>();
 
-    public virtual TipoCentro TipoCentroNavigation { get; set; } = null!;
+    public virtual TipoCentro? TipoCentroNavigation { get; set; }
 }

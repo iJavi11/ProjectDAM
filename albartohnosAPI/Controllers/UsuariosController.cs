@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using albartohnosAPI.Data;
 using albartohnosAPI.Models;
+using Serilog;
 
 namespace albartohnosAPI.Controllers
 {
@@ -23,9 +24,23 @@ namespace albartohnosAPI.Controllers
 
         // GET: api/Usuarios
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Usuario>>> GetUsuario()
+        public async Task<List<Usuario>> GetAllUsuarios()
         {
-            return await _context.Usuario.ToListAsync();
+            return await Negocio.GetAllUsers();
+        }
+
+        // GET: api/Usuarios/Conductores
+        [HttpGet("Conductores")]
+        public async Task<List<Usuario>> GetAllConductores()
+        {
+            return await Negocio.GetAllDrivers();
+        }
+
+        // GET: api/Usuarios/Conductores
+        [HttpGet("Conductores/Activos")]
+        public async Task<List<Usuario>> GetConductoresActivos()
+        {
+            return await Negocio.GetActiveDrivers();
         }
 
         // GET: api/Usuarios/admin
@@ -44,10 +59,10 @@ namespace albartohnosAPI.Controllers
 
         // PUT: api/Usuarios/admin
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutUsuario(string id, Usuario usuario)
+        [HttpPut("{login}")]
+        public async Task<IActionResult> PutUsuario(string login, Usuario usuario)
         {
-            if (id != usuario.Login)
+            if (login != usuario.Login)
             {
                 return BadRequest();
             }
@@ -57,15 +72,18 @@ namespace albartohnosAPI.Controllers
             try
             {
                 await _context.SaveChangesAsync();
+                Log.Information($"User: {usuario.Login} successfully updated");
             }
-            catch (DbUpdateConcurrencyException)
+            catch (DbUpdateConcurrencyException dbEx)
             {
-                if (!UsuarioExists(id))
+                if (!Negocio.UsuarioExists(login))
                 {
+                    Log.Warning($"User -- {usuario.Login} -- Not Found");
                     return NotFound();
                 }
                 else
                 {
+                    Log.Error($"An error occurred while editing an user: {dbEx.Message}");
                     throw;
                 }
             }
@@ -82,41 +100,42 @@ namespace albartohnosAPI.Controllers
             try
             {
                 await _context.SaveChangesAsync();
+                Log.Information($"User: {usuario.Login} successfully created");
             }
-            catch (DbUpdateException)
+            catch (DbUpdateException dbEx)
             {
-                if (UsuarioExists(usuario.Login))
+                if (Negocio.UsuarioExists(usuario.Login))
                 {
+                    Log.Warning($"User -- {usuario.Login} -- already exists");
                     return Conflict();
                 }
                 else
                 {
+                    Log.Error($"An error occurred while creating an user: {dbEx.Message}");
                     throw;
                 }
             }
 
-            return CreatedAtAction("GetUsuario", new { id = usuario.Login }, usuario);
+            return CreatedAtAction("GetUsuario", new { login = usuario.Login }, usuario);
         }
 
-        // DELETE: api/Usuarios/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteUsuario(string id)
+        // DELETE: api/Usuarios/admin
+        [HttpDelete("{login}")]
+        public async Task<IActionResult> DeleteUsuario(string login)
         {
-            var usuario = await _context.Usuario.FindAsync(id);
+            var usuario = await _context.Usuario.FindAsync(login);
             if (usuario == null)
             {
+                Log.Warning($"User: {login} does not exists");
                 return NotFound();
             }
 
             _context.Usuario.Remove(usuario);
             await _context.SaveChangesAsync();
 
-            return NoContent();
-        }
+            Log.Information($"User: {usuario.Login} successfully deleted");
 
-        private bool UsuarioExists(string id)
-        {
-            return _context.Usuario.Any(e => e.Login == id);
+            return NoContent();
         }
     }
 }

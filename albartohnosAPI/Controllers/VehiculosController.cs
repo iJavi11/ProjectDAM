@@ -29,6 +29,13 @@ namespace albartohnosAPI.Controllers
             return await Negocio.GetAllVehicles();
         }
 
+        // GET: api/Vehiculos/Activos
+        [HttpGet("Activos")]
+        public async Task<List<Vehiculo>> GetVehiculosActivos()
+        {
+            return await Negocio.GetActiveVehicles();
+        }
+
         // GET: api/Vehiculos/7744GSN
         [HttpGet("{matricula}")]
         public async Task<ActionResult<Vehiculo>> GetVehiculoByMatricula(string matricula)
@@ -92,17 +99,17 @@ namespace albartohnosAPI.Controllers
             {
                 if (Negocio.VehicleExists(vehiculo.Matricula))
                 {
-                    Log.Warning($"Vehicle -- {vehiculo.Matricula} -- already exits");
+                    Log.Warning($"Vehicle -- {vehiculo.Matricula} -- already exists");
                     return Conflict();
                 }
                 else
                 {
-                    Log.Error($"An error occurred while editing a vehicle: {dbEx.Message}");
+                    Log.Error($"An error occurred while creating a vehicle: {dbEx.Message}");
                     throw;
                 }
             }
 
-            return CreatedAtAction("GetVehiculo", new { id = vehiculo.Matricula }, vehiculo);
+            return CreatedAtAction("GetVehiculoByMatricula", new { matricula = vehiculo.Matricula }, vehiculo);
         }
 
         // DELETE: api/Vehiculos/7744GSN
@@ -112,7 +119,7 @@ namespace albartohnosAPI.Controllers
             var vehiculo = await Negocio.GetVehicleByPlate(matricula);
             if (vehiculo == null)
             {
-                Log.Warning($"Vehicle: {matricula} does not exits");
+                Log.Warning($"Vehicle: {matricula} does not exists");
                 return NotFound();
             }
 

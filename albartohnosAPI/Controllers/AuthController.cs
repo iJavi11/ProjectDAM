@@ -23,32 +23,6 @@ namespace albartohnosAPI.Controllers
             _tokenService = tokenService;
         }
 
-        //Register method
-        /*
-        [HttpPost("register")]
-        public async Task<ActionResult<bool>> Register([FromForm] string username, [FromForm] string email, [FromForm] string passwordHash)
-        {
-            // Check if the login and email are unique
-            if (await Negocio.CheckUsernameTaken(username))
-            {
-                return BadRequest("Username is already taken.");
-            }
-
-            if (await Negocio.CheckEmailTaken(email))
-            {
-                return BadRequest("Email is already registered.");
-            }
-
-            // Create a new user
-            if (await Negocio.CreateUser(username, email, passwordHash))
-            {
-                return Ok(true);
-            }
-
-            return BadRequest("Error while registering user");
-        }
-        */
-
         // POST: api/auth/login
         [HttpPost("login")]
         public async Task<ActionResult<string>> Login([FromBody] Requests.LoginRequest loginRequest)

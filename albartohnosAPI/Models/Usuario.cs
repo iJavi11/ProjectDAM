@@ -41,7 +41,7 @@ public partial class Usuario
     [Column("Fecha_Baja")]
     public DateOnly? FechaBaja { get; set; }
 
-    public virtual Perfil PerfilNavigation { get; set; } = null!;
+    public virtual Perfil? PerfilNavigation { get; set; }
 
     public virtual ICollection<Ruta> Ruta { get; set; } = new List<Ruta>();
 }

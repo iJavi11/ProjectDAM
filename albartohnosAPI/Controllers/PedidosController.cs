@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using albartohnosAPI.Data;
 using albartohnosAPI.Models;
+using Serilog;
 
 namespace albartohnosAPI.Controllers
 {
@@ -23,16 +24,16 @@ namespace albartohnosAPI.Controllers
 
         // GET: api/Pedidos
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Pedido>>> GetPedido()
+        public async Task<List<Pedido>> GetAllPedidos()
         {
-            return await _context.Pedido.ToListAsync();
+            return await Negocio.GetAllOrders();
         }
 
-        // GET: api/Pedidos/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Pedido>> GetPedido(string id)
+        // GET: api/Pedidos/ENT-001
+        [HttpGet("{codPedido}")]
+        public async Task<ActionResult<Pedido>> GetPedidoByCodPedido(string codPedido)
         {
-            var pedido = await _context.Pedido.FindAsync(id);
+            var pedido = await Negocio.GetStopByCodOrder(codPedido);
 
             if (pedido == null)
             {
@@ -42,12 +43,26 @@ namespace albartohnosAPI.Controllers
             return pedido;
         }
 
-        // PUT: api/Pedidos/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutPedido(string id, Pedido pedido)
+        // GET: api/Pedidos/Parada/ENT-001
+        [HttpGet("Parada/{idParada}")]
+        public async Task<ActionResult<List<Pedido>>> GetPedidosByParada(int idParada)
         {
-            if (id != pedido.CodPedido)
+            var pedidos = await Negocio.GetOrdersByStop(idParada);
+
+            if (pedidos == null)
+            {
+                return NotFound();
+            }
+
+            return pedidos;
+        }
+
+        // PUT: api/Pedidos/ENT-001
+        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [HttpPut("{codPedido}")]
+        public async Task<IActionResult> PutPedido(string codPedido, Pedido pedido)
+        {
+            if (codPedido != pedido.CodPedido)
             {
                 return BadRequest();
             }
@@ -57,15 +72,18 @@ namespace albartohnosAPI.Controllers
             try
             {
                 await _context.SaveChangesAsync();
+                Log.Information($"Order: {pedido.CodPedido} successfully updated");
             }
-            catch (DbUpdateConcurrencyException)
+            catch (DbUpdateConcurrencyException dbEx)
             {
-                if (!PedidoExists(id))
+                if (!Negocio.OrderExists(codPedido))
                 {
+                    Log.Warning($"Order -- {pedido.CodPedido} -- Not Found");
                     return NotFound();
                 }
                 else
                 {
+                    Log.Error($"An error occurred while editing aan order: {dbEx.Message}");
                     throw;
                 }
             }
@@ -82,41 +100,42 @@ namespace albartohnosAPI.Controllers
             try
             {
                 await _context.SaveChangesAsync();
+                Log.Information($"Order: {pedido.CodPedido} successfully created");
             }
-            catch (DbUpdateException)
+            catch (DbUpdateException dbEx)
             {
-                if (PedidoExists(pedido.CodPedido))
+                if (Negocio.OrderExists(pedido.CodPedido))
                 {
+                    Log.Warning($"Order -- {pedido.CodPedido} -- already exists");
                     return Conflict();
                 }
                 else
                 {
+                    Log.Error($"An error occurred while creating an order: {dbEx.Message}");
                     throw;
                 }
             }
 
-            return CreatedAtAction("GetPedido", new { id = pedido.CodPedido }, pedido);
+            return CreatedAtAction("GetPedidoByCodPedido", new { codPedido = pedido.CodPedido }, pedido);
         }
 
         // DELETE: api/Pedidos/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeletePedido(string id)
+        [HttpDelete("{codPedido}")]
+        public async Task<IActionResult> DeletePedido(string codPedido)
         {
-            var pedido = await _context.Pedido.FindAsync(id);
+            var pedido = await _context.Pedido.FindAsync(codPedido);
             if (pedido == null)
             {
+                Log.Warning($"Order: {codPedido} does not exists");
                 return NotFound();
             }
 
             _context.Pedido.Remove(pedido);
             await _context.SaveChangesAsync();
 
-            return NoContent();
-        }
+            Log.Information($"Order: {pedido.CodPedido} successfully deleted");
 
-        private bool PedidoExists(string id)
-        {
-            return _context.Pedido.Any(e => e.CodPedido == id);
+            return NoContent();
         }
     }
 }

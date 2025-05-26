@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using albartohnosAPI.Data;
 using albartohnosAPI.Models;
+using Serilog;
 
 namespace albartohnosAPI.Controllers
 {
@@ -23,16 +24,16 @@ namespace albartohnosAPI.Controllers
 
         // GET: api/Rutas
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Ruta>>> GetRuta()
+        public async Task<List<Ruta>> GetAllRutas()
         {
-            return await _context.Ruta.ToListAsync();
+            return await Negocio.GetAllRoutes();
         }
 
-        // GET: api/Rutas/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Ruta>> GetRuta(string id)
+        // GET: api/Rutas/ruta01
+        [HttpGet("{codRuta}")]
+        public async Task<ActionResult<Ruta>> GetRutaByCodRuta(string codRuta)
         {
-            var ruta = await _context.Ruta.FindAsync(id);
+            var ruta = await Negocio.GetRouteByCodRoute(codRuta);
 
             if (ruta == null)
             {
@@ -42,12 +43,12 @@ namespace albartohnosAPI.Controllers
             return ruta;
         }
 
-        // PUT: api/Rutas/5
+        // PUT: api/Rutas/ruta01
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutRuta(string id, Ruta ruta)
+        [HttpPut("{codRuta}")]
+        public async Task<IActionResult> PutRuta(string codRuta, Ruta ruta)
         {
-            if (id != ruta.CodRuta)
+            if (codRuta != ruta.CodRuta)
             {
                 return BadRequest();
             }
@@ -57,15 +58,18 @@ namespace albartohnosAPI.Controllers
             try
             {
                 await _context.SaveChangesAsync();
+                Log.Information($"Route: {ruta.CodRuta} successfully updated");
             }
-            catch (DbUpdateConcurrencyException)
+            catch (DbUpdateConcurrencyException dbEx)
             {
-                if (!RutaExists(id))
+                if (!Negocio.RouteExists(codRuta))
                 {
+                    Log.Warning($"Route -- {ruta.CodRuta} -- Not Found");
                     return NotFound();
                 }
                 else
                 {
+                    Log.Error($"An error occurred while editing a route: {dbEx.Message}");
                     throw;
                 }
             }
@@ -82,41 +86,42 @@ namespace albartohnosAPI.Controllers
             try
             {
                 await _context.SaveChangesAsync();
+                Log.Information($"Route: {ruta.CodRuta} successfully created");
             }
-            catch (DbUpdateException)
+            catch (DbUpdateException dbEx)
             {
-                if (RutaExists(ruta.CodRuta))
+                if (Negocio.RouteExists(ruta.CodRuta))
                 {
+                    Log.Warning($"Route -- {ruta.CodRuta} -- already exists");
                     return Conflict();
                 }
                 else
                 {
+                    Log.Error($"An error occurred while creating a route: {dbEx.Message}");
                     throw;
                 }
             }
 
-            return CreatedAtAction("GetRuta", new { id = ruta.CodRuta }, ruta);
+            return CreatedAtAction("GetRutaByCodRuta", new { codRuta = ruta.CodRuta }, ruta);
         }
 
-        // DELETE: api/Rutas/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteRuta(string id)
+        // DELETE: api/Rutas/ruta01
+        [HttpDelete("{codRuta}")]
+        public async Task<IActionResult> DeleteRuta(string codRuta)
         {
-            var ruta = await _context.Ruta.FindAsync(id);
+            var ruta = await _context.Ruta.FindAsync(codRuta);
             if (ruta == null)
             {
+                Log.Warning($"Route: {codRuta} does not exists");
                 return NotFound();
             }
 
             _context.Ruta.Remove(ruta);
             await _context.SaveChangesAsync();
 
-            return NoContent();
-        }
+            Log.Information($"Route: {ruta.CodRuta} successfully deleted");
 
-        private bool RutaExists(string id)
-        {
-            return _context.Ruta.Any(e => e.CodRuta == id);
+            return NoContent();
         }
     }
 }

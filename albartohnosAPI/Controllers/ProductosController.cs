@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using albartohnosAPI.Data;
 using albartohnosAPI.Models;
+using Serilog;  
 
 namespace albartohnosAPI.Controllers
 {
@@ -23,16 +24,23 @@ namespace albartohnosAPI.Controllers
 
         // GET: api/Productos
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Producto>>> GetProducto()
+        public async Task<List<Producto>> GetProductos()
         {
-            return await _context.Producto.ToListAsync();
+            return await Negocio.GetAllProducts();
         }
 
-        // GET: api/Productos/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Producto>> GetProducto(string id)
+        // GET: api/Productos/Activos
+        [HttpGet("Activos")]
+        public async Task<List<Producto>> GetProductosActivos()
         {
-            var producto = await _context.Producto.FindAsync(id);
+            return await Negocio.GetActiveProducts();
+        }
+
+        // GET: api/Productos/PEL-001
+        [HttpGet("{sku}")]
+        public async Task<ActionResult<Producto>> GetProductoBySku(string sku)
+        {
+            var producto = await Negocio.GetProductBySku(sku);
 
             if (producto == null)
             {
@@ -42,12 +50,12 @@ namespace albartohnosAPI.Controllers
             return producto;
         }
 
-        // PUT: api/Productos/5
+        // PUT: api/Productos/PEL-001
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutProducto(string id, Producto producto)
+        [HttpPut("{sku}")]
+        public async Task<IActionResult> PutProducto(string sku, Producto producto)
         {
-            if (id != producto.Sku)
+            if (sku != producto.Sku)
             {
                 return BadRequest();
             }
@@ -57,15 +65,18 @@ namespace albartohnosAPI.Controllers
             try
             {
                 await _context.SaveChangesAsync();
+                Log.Information($"Product: {producto.Sku} successfully updated");
             }
-            catch (DbUpdateConcurrencyException)
+            catch (DbUpdateConcurrencyException dbEx)
             {
-                if (!ProductoExists(id))
+                if (!Negocio.ProductExists(sku))
                 {
+                    Log.Warning($"Product -- {producto.Sku} -- Not Found");
                     return NotFound();
                 }
                 else
                 {
+                    Log.Error($"An error occurred while editing a product: {dbEx.Message}");
                     throw;
                 }
             }
@@ -82,27 +93,30 @@ namespace albartohnosAPI.Controllers
             try
             {
                 await _context.SaveChangesAsync();
+                Log.Information($"Product: {producto.Sku} successfully created");
             }
-            catch (DbUpdateException)
+            catch (DbUpdateException dbEx)
             {
-                if (ProductoExists(producto.Sku))
+                if (Negocio.ProductExists(producto.Sku))
                 {
+                    Log.Warning($"Product -- {producto.Sku} -- already exits");
                     return Conflict();
                 }
                 else
                 {
+                    Log.Error($"An error occurred while editing a product: {dbEx.Message}");
                     throw;
                 }
             }
 
-            return CreatedAtAction("GetProducto", new { id = producto.Sku }, producto);
+            return CreatedAtAction("GetProductoBySku", new { sku = producto.Sku }, producto);
         }
 
-        // DELETE: api/Productos/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteProducto(string id)
+        // DELETE: api/Productos/PEL-001
+        [HttpDelete("{sku}")]
+        public async Task<IActionResult> DeleteProducto(string sku)
         {
-            var producto = await _context.Producto.FindAsync(id);
+            var producto = await _context.Producto.FindAsync(sku);
             if (producto == null)
             {
                 return NotFound();
@@ -112,11 +126,6 @@ namespace albartohnosAPI.Controllers
             await _context.SaveChangesAsync();
 
             return NoContent();
-        }
-
-        private bool ProductoExists(string id)
-        {
-            return _context.Producto.Any(e => e.Sku == id);
         }
     }
 }
