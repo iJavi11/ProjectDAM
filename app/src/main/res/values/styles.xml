@@ -1,0 +1,12 @@
+<resources>
+    // ...existing code...
+    <style name="Theme.AppCompat.Light.NoActionBar" parent="Theme.AppCompat.Light">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    // ...existing code...
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- ...existing code... -->
+    </style>
+    // ...existing code...
+</resources>
