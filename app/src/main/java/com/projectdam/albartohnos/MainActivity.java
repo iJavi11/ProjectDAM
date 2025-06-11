@@ -22,6 +22,8 @@ import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
 import java.security.cert.X509Certificate;
 import java.security.MessageDigest;
+import com.projectdam.albartohnos.Models.Usuario;
+import android.content.Intent;
 
 public class MainActivity extends AppCompatActivity {
     private TextView loginTitleTextView;
@@ -98,8 +100,9 @@ public class MainActivity extends AppCompatActivity {
 
     // AsyncTask para la petición de login
     private class LoginTask extends AsyncTask<String, Void, Boolean> {
-        private String errorMsg = null;
         private String token = null;
+        private String errorMsg = null;
+        private Usuario usuario = null;
 
         @Override
         protected Boolean doInBackground(String... params) {
@@ -107,56 +110,27 @@ public class MainActivity extends AppCompatActivity {
             String password = params[1];
             // Encriptar la contraseña antes de enviarla
             String encryptedPassword = encriptarSHA256(password);
-            HttpsURLConnection conn = null;
-            try {
-                URL url = new URL("https://10.0.2.2:7256/api/Auth/login");
-                conn = (HttpsURLConnection) url.openConnection();
-                conn.setRequestMethod("POST");
-                conn.setRequestProperty("Content-Type", "application/json; charset=UTF-8");
-                conn.setDoOutput(true);
+            token = Negocio.IniciarSesion(login, encryptedPassword);
+            if (token != null && !token.isEmpty()) {
+                // Buscar usuario por login tras login exitoso
+                usuario = Negocio.ObtenerUsuario(login);
 
-                JSONObject jsonParam = new JSONObject();
-                jsonParam.put("login", login);
-                jsonParam.put("password", encryptedPassword);
-
-                OutputStream os = conn.getOutputStream();
-                os.write(jsonParam.toString().getBytes("UTF-8"));
-                os.close();
-
-                int responseCode = conn.getResponseCode();
-                if (responseCode == 200) {
-                    // Leer respuesta para obtener el token
-                    BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
-                    StringBuilder sb = new StringBuilder();
-                    String line;
-                    while ((line = reader.readLine()) != null) {
-                        sb.append(line);
+                // Validaciones de perfiles y usuarios activos
+                if (usuario != null) {
+                    if (usuario.getPerfil() == 2) {
+                        errorMsg = "El usuario no tiene permisos sobre este aplicativo";
+                        return false;
                     }
-                    reader.close();
-                    JSONObject responseJson = new JSONObject(sb.toString());
-                    token = responseJson.optString("token");
-                    return token != null && !token.isEmpty();
-                } else {
-                    InputStream errorStream = conn.getErrorStream();
-                    if (errorStream != null) {
-                        BufferedReader reader = new BufferedReader(new InputStreamReader(errorStream));
-                        StringBuilder sb = new StringBuilder();
-                        String line;
-                        while ((line = reader.readLine()) != null) {
-                            sb.append(line);
-                        }
-                        reader.close();
-                        errorMsg = sb.toString();
-                    } else {
-                        errorMsg = "Error de autenticación";
+                    if (usuario.getActivo() == 0) {
+                        errorMsg = "El usuario está deshabilitado. Consulte con un Administrador";
+                        return false;
                     }
-                    return false;
                 }
-            } catch (Exception e) {
-                errorMsg = "Error de conexión: " + e.getMessage();
+
+                return true;
+            } else {
+                errorMsg = "Usuario o contraseña incorrectos";
                 return false;
-            } finally {
-                if (conn != null) conn.disconnect();
             }
         }
 
@@ -171,6 +145,12 @@ public class MainActivity extends AppCompatActivity {
                 errorTextView.setText("¡Bienvenido!");
                 errorTextView.setTextColor(getResources().getColor(android.R.color.holo_green_dark));
                 errorTextView.setVisibility(View.VISIBLE);
+
+                // Intent para pasar el usuario a RutasActivity
+                Intent intent = new Intent(MainActivity.this, RutasActivity.class);
+                intent.putExtra("usuario", usuario);
+                startActivity(intent);
+                finish();
             } else {
                 errorTextView.setText(errorMsg != null ? errorMsg : "Usuario o contraseña incorrectos");
                 errorTextView.setTextColor(getResources().getColor(android.R.color.holo_red_dark));
