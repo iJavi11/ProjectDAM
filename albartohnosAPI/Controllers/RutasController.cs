@@ -43,6 +43,20 @@ namespace albartohnosAPI.Controllers
             return ruta;
         }
 
+        // GET: api/Rutas/Condcutor/conductor
+        [HttpGet("Condcutor/{idConductor}")]
+        public async Task<ActionResult<List<Ruta>>> GetRutasByConductor(string idConductor)
+        {
+            var rutas = await Negocio.GetRoutesByDriver(idConductor);
+
+            if (rutas == null)
+            {
+                return NotFound();
+            }
+
+            return rutas;
+        }
+
         // PUT: api/Rutas/ruta01
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{codRuta}")]

@@ -201,6 +201,10 @@ namespace albartohnosAPI
         {
             return await GetContext().Ruta.FindAsync(codRuta);
         }
+        public static async Task<List<Ruta>> GetRoutesByDriver(string idConductor)
+        {
+            return await GetContext().Ruta.Where(e => e.Conductor == idConductor).ToListAsync();
+        }
         public static bool RouteExists(string codRuta)
         {
             return GetContext().Ruta.Any(e => e.CodRuta == codRuta);
